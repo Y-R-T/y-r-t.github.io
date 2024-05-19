@@ -4,6 +4,51 @@
   
     
     <entry>
+      <title>热烈欢迎henry_in_out打开本网站👏</title>
+      <link href="/2024/05/19/%E7%83%AD%E7%83%88%E6%AC%A2%E8%BF%8Ehenry-in-out%E6%89%93%E5%BC%80%E6%9C%AC%E7%BD%91%E7%AB%99%F0%9F%91%8F/"/>
+      <url>/2024/05/19/%E7%83%AD%E7%83%88%E6%AC%A2%E8%BF%8Ehenry-in-out%E6%89%93%E5%BC%80%E6%9C%AC%E7%BD%91%E7%AB%99%F0%9F%91%8F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="热烈欢迎👏热烈欢迎👏热烈欢迎👏"><a href="#热烈欢迎👏热烈欢迎👏热烈欢迎👏" class="headerlink" title="热烈欢迎👏热烈欢迎👏热烈欢迎👏"></a>热烈欢迎👏热烈欢迎👏热烈欢迎👏</h1><h2 id="热烈欢迎👏热烈欢迎👏热烈欢迎👏-1"><a href="#热烈欢迎👏热烈欢迎👏热烈欢迎👏-1" class="headerlink" title="热烈欢迎👏热烈欢迎👏热烈欢迎👏"></a>热烈欢迎👏热烈欢迎👏热烈欢迎👏</h2><p><em>热烈欢迎👏热烈欢迎👏热烈欢迎👏</em></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">热烈欢迎👏热烈欢迎👏热烈欢迎👏</span><br></pre></td></tr></table></figure><p><b>热烈欢迎👏热烈欢迎👏热烈欢迎👏</b></p><table><thead><tr><th>热烈欢迎👏</th><th>热烈欢迎👏</th><th>热烈欢迎👏</th></tr></thead></table><p><a href="https://osu.ppy.sh/users/32494511"><img src="https://osu-sig.vercel.app/card?user=henry_in_out&mode=mania&animation=true" alt="My SVG Image"></a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何在Github上获得静态网页？</title>
+      <link href="/2024/05/19/%E5%A6%82%E4%BD%95%E5%9C%A8Github%E4%B8%8A%E8%8E%B7%E5%BE%97%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%EF%BC%9F/"/>
+      <url>/2024/05/19/%E5%A6%82%E4%BD%95%E5%9C%A8Github%E4%B8%8A%E8%8E%B7%E5%BE%97%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%EF%BC%9F/</url>
+      
+        <content type="html"><![CDATA[<p>准备：GitHub账号</p><blockquote><p>正在施工中……</p></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mac如何用Hexo建一个blog？</title>
+      <link href="/2024/05/19/%E5%A6%82%E4%BD%95%E7%94%A8Hexo%E5%BB%BA%E4%B8%80%E4%B8%AAblog%EF%BC%9F/"/>
+      <url>/2024/05/19/%E5%A6%82%E4%BD%95%E7%94%A8Hexo%E5%BB%BA%E4%B8%80%E4%B8%AAblog%EF%BC%9F/</url>
+      
+        <content type="html"><![CDATA[<p>准备：Mac电脑，github账号</p><h2 id="一、-配环境"><a href="#一、-配环境" class="headerlink" title="一、 配环境"></a>一、 配环境</h2><ol><li><p><a href="https://nodejs.org/">下载 Node.js</a></p></li><li><p>安装 homebrew</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;</span><br></pre></td></tr></table></figure></li></ol><h2 id="二、安装-Hexo"><a href="#二、安装-Hexo" class="headerlink" title="二、安装 Hexo"></a>二、安装 Hexo</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><h2 id="三、初始化"><a href="#三、初始化" class="headerlink" title="三、初始化"></a>三、初始化</h2><p>将 <code>&lt;folder&gt;</code> 替换为你想要作为网站本地目录的文件夹</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;folder&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><h2 id="四、配置"><a href="#四、配置" class="headerlink" title="四、配置"></a>四、配置</h2><p>打开你刚才选择的 <code>&lt;folder&gt;</code> 中的 <code>_config.yml</code> 文件， 如图更改内容：</p><p><img src="/img/000001.png" alt="网站设置"><br><img src="/img/000002.png" alt="网址设置"><br>其余内容解释请访问 <a href="https://hexo.io/zh-cn/docs/configuration">官方解释页面</a></p><h2 id="五、部署"><a href="#五、部署" class="headerlink" title="五、部署"></a>五、部署</h2><ol><li>建立一个名为 <code>&lt;你的 GitHub 用户名&gt;.github.io</code> 的公开仓库，教程在<a href="">这里</a></li></ol><blockquote><p>正在施工中……</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Post </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Test</title>
       <link href="/2024/05/19/Test/"/>
       <url>/2024/05/19/Test/</url>
