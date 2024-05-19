@@ -1,0 +1,6 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 取决于你希望容器的高度 */
+}
