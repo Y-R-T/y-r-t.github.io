@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>字数统计器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>英文字数统计器</h2>
+        </div>
+        <div class="input-area">
+            <textarea id="textInput" rows="5" cols="50" placeholder="在这里输入英文..."></textarea>
+            <br>
+            <button onclick="countWords()">统计字数</button>
+        </div>
+        <div class="result">
+            <p id="wordCount">字数: 0</p>
+        </div>
+    </div>
+    <script src="wordCount.js"></script>
+</body>
+</html>
