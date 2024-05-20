@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
+    
+    <title>ruotian的网站</title>
+</head>
+<body>
+    <div id="header">
+        <h1 style="margin-bottom:0;">Get-MIT-President</h1>
+        <p><a href="get-mit-president/index.html">Click here!</a></p>
+        <h1 style="margin-bottom:0;">Simple Timer</h1>
+        <p><a href="Simple-Timer/index.html">Click here!</a></p>
+        <h1 style="margin-bottom:0;">Word Counter</h1>
+        <p><a href="Word-Counter/index.html">Click here!</a></p>   
+        <h1 style="margin-bottom:0;">Music Game</h1>
+        <p><a href="musicGame/index.html">Click here!</a></p>       
+        <h1 style="margin-bottom:0;">Bird Game</h1>
+        <p><a href="bird/index.html">Click here!</a></p>      
+        <!-- 触发模态框的按钮 -->
+        <button id="coffeeBtn"><img id="img_coffee" src="img/coffee.svg" alt="coffee"></button>
+
+        <!-- 模态框 -->
+        <div id="coffeeModal" class="modal">
+
+        <!-- 模态框内容 -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="inner-coffee" src="img/coffee.svg" alt="coffee">
+            <p>这是一个模态弹窗，您可以在这里放置内容。</p>
+        </div>
+
+        </div>
+    </div>
+<script src="coffeeModal.js"></script>
+</body>
+</html>
