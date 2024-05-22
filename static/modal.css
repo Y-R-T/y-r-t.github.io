@@ -1,0 +1,70 @@
+  /* 模态框（背景） */
+  .modal {
+    display: none; /* 默认隐藏 */
+    position: fixed; /* 固定定位 */
+    z-index: 1; /* 位于顶层 */
+    left: 0;
+    top: 0;
+    width: 100%; /* 全宽 */
+    height: 100%; /* 全高 */
+    overflow: auto; /* 启用滚动条 */
+    background-color: rgb(0,0,0); /* 背景颜色 */
+    background-color: rgba(0,0,0,0.4); /* 背景颜色，带有透明度 */
+  }
+
+  /* 模态框内容 */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% 从顶部和底部的距离以及自动水平 */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* 可以根据需要调整宽度 */
+  }
+
+  /* 关闭按钮 */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* 按钮样式 */
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+  }
+
+  #img_coffee{
+  width: 50px;
+  height: 50px; 
+  vertical-align: middle; /* 垂直对齐方式，可根据需要调整 */   
+  }
+
+#inner_coffee{
+  width: 50px;
+  height: 50px; 
+  vertical-align: middle; /* 垂直对齐方式，可根据需要调整 */  
+}
+
+  #coffeeBtn{
+  padding: 0; /* 取消按钮的内边距 */
+  margin: 0; /* 取消按钮的外边距 */
+  border: none; /* 取消按钮的边框 */
+  background: none; /* 取消按钮的背景色 */
+    /* 自定义按钮的样式 */
+  background-color: black; /* 按钮背景颜色 */
+
+  transition: background-color 0.3s ease; /* 添加按钮颜色过渡效果 */
+  }
+  #coffeeBtn:hover {
+  box-shadow: 0 0 10px 5px #ffcc00; /* 添加发光效果，可以根据需要调整颜色和大小 */
+
+  }

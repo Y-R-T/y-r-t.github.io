@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+#header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#header a {
+    color: #fff;
+    text-decoration: none;
+    /* 链接悬停效果 */
+    transition: color 0.3s;
+}
+
+#header h1 {
+    margin: 0;
+    animation: fadeIn 1s ease-in;
+}
+
+#header p {
+    margin: 10px 0;
+    /* 段落动画 */
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 0.5s; /* 动画延迟 */
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #header {
+        padding: 5px 10px;
+    }
+}
+
+
+
+
+#header a:hover {
+    color: #4CAF50; /* 悬停时改变链接颜色 */
+}
+
+/* 标题动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+

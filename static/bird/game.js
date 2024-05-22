@@ -49,12 +49,13 @@ class BlockPair{
 }
 
 class Bird{
-    constructor() {
-        this.x = 300;
+    constructor(x, r) {
+        this.x = x;
         this.y = 250;
         this.dyList = [0, 0, 0, 0, 0, 
                         0, 0, 0, 0, 0];
         this.dy = 0;
+        this.r = r;
     }
 
     update() {
@@ -76,7 +77,7 @@ class Bird{
 
     draw() {
         context.beginPath();
-        context.arc(this.x, this.y, 20, 0, 2*Math.PI);
+        context.arc(this.x, this.y, this.r, 0, 2*Math.PI);
         context.fillStyle = 'blue';
         context.fill();
         context.beginPath();
@@ -90,13 +91,48 @@ class Bird{
         for (let index = 0; index < this.dyList.length; index++) {
             this.dyList[index] += 5;
         }
-    }
+    } 
 }
 
 var list = [new BlockPair(250, 100)];
-var bird = new Bird()
+var bird = new Bird(300, 20);
+var dead = false;
 function update() {
     context.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (let index = 0; index < list.length; index++) {
+        if (300 + 20 < list[index].x) {
+            continue;
+        }
+        if (300 - 20 > list[index].x + list[index].width) {
+            continue;
+        }
+
+        if (300 < list[index].x) {
+            if (bird.y < list[index].aliveRange[0] || bird.y > list[index].aliveRange[1]) {
+                dead = true;
+                break;
+            }
+            if ((list[index].x - 300) ** 2 + (bird.y - list[index].aliveRange[0]) ** 2 < 20 ** 2 || (list[index].x - 300) ** 2 + (bird.y - list[index].aliveRange[1]) ** 2 < 20 ** 2) {
+                dead = true;
+                break;
+            }
+        }
+        if (300 > list[index].x + list[index].width) {
+            if ((300 - list[index].x - list[index].width) ** 2 + (bird.y - list[index].aliveRange[0]) ** 2 < 20 ** 2 || (300 - list[index].x - list[index].width) ** 2 + (bird.y - list[index].aliveRange[1]) ** 2 < 20 ** 2) {
+                dead = true;
+                break;
+            }
+        }
+        if ((bird.y - list[index].aliveRange[0]) ** 2 < 20 ** 2 || (bird.y - list[index].aliveRange[1]) ** 2 < 20 ** 2) {
+            dead = true;
+            break;
+        }
+    }
+    if (dead == true) {
+        alert("You are dead!")
+    }
+    
 
     if (list[0].x + list[0].width < 0) {
         list.shift();
