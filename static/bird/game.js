@@ -97,6 +97,13 @@ class Bird{
 var list = [new BlockPair(250, 100)];
 var bird = new Bird(300, 20);
 var dead = false;
+var isIn = false;
+var lastIsIn = false;
+var gameScore = 0;
+
+context.font = '50px Arial';
+context.fillStyle = 'blue';
+
 function update() {
     context.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -105,9 +112,10 @@ function update() {
             continue;
         }
         if (300 - 20 > list[index].x + list[index].width) {
+            isIn = false;
             continue;
         }
-
+        isIn = true;
         if (300 < list[index].x) {
             if (bird.y < list[index].aliveRange[0] || bird.y > list[index].aliveRange[1]) {
                 dead = true;
@@ -129,8 +137,25 @@ function update() {
             break;
         }
     }
+
+
+    if (isIn == false && lastIsIn == true) {
+        gameScore += 1;
+        lastIsIn = false;
+    }
+    if (isIn == true && lastIsIn == false) {
+        lastIsIn = true;
+    }
+
     if (dead == true) {
         alert("You are dead!")
+        list = [new BlockPair(250, 100)];
+        bird = new Bird(300, 20);
+        dead = false;
+        isIn = false;
+        lastIsIn = false;
+        gameScore = 0;
+        return 0;
     }
     
 
@@ -149,6 +174,7 @@ function update() {
 
     bird.update()
     bird.draw()
+    context.fillText(gameScore, 100, 100);
 
 }
 
