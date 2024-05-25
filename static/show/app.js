@@ -136,6 +136,7 @@ document.addEventListener('keyup', function (event) {
 });
 
 function update() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
     for (let index = 0; index < keyList1.length; index++) {
         keyList1[index].draw();   
     }

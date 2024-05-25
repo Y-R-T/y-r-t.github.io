@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Count Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word Count Checker</h1>
+        <div class="controls">
+            <select id="fontSelect">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+            <input type="number" id="fontSizeInput" value="16" min="10" max="72"> px
+        </div>
+        <textarea id="textInput" rows="10" cols="50" placeholder="Start typing..."></textarea>
+        <div id="wordCount">Word Count: 0</div>
+        <button id="saveButton">Save as TXT</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
