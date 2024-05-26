@@ -24,22 +24,68 @@ class Direction {
     }
 }
 
-class Enemy {
-    constructor () {
-        this.x = 100;
-        this.y = 100;
-        this.r = 10;
+class bullet {
+    constructor (x, y, r) {
+        this.x = x;
+        this.y = y;
+        this.r = r;
         this.vx = 0;
         this.vy = 0;
     }
 
-    draw (){
-        context.fillStyle = "#123456";
+    update () {
+        this.x += this.vx;
+        this.y += this.vy;
+    }
+
+    setAttr (x=null, y=null, vx=null, vy=null, r=null) {
+        if (x !== null) {
+            this.x = x;
+        }
+        if (y !== null) {
+            this.y = y;
+        }
+        if (vx !== null) {
+            this.vx = vx;
+        }
+        if (vy !== null) {
+            this.vy = vy;
+        }
+        if (r !== null) {
+            this.r = r;
+        }
+    }
+
+    draw () {
+        context.fillStyle = '#654321';
         context.beginPath();
-        context.arc();
+        context.arc(this.x, this.y, this.r, 0, 2 * Math.PI);
+        context.fill()
         context.closePath();
     }
 }
+
+class Enemy {
+    constructor (x, y, r) {
+        this.x = x;
+        this.y = y;
+        this.r = r;
+        this.vx = 0;
+        this.vy = 0;
+    }
+
+    shot () {
+
+    }
+    draw () {
+        context.fillStyle = '#123456';
+        context.beginPath();
+        context.arc(this.x, this.y, this.r, 0, 2 * Math.PI);
+        context.fill()
+        context.closePath();
+    }
+}
+
 class Player {
     constructor () {
         this.x = 100;
@@ -47,10 +93,11 @@ class Player {
         this.vx = 0;
         this.vy = 0;
         this.g = 0.1;
-        this.width = 50;
-        this.height = 80;
-        this.direction = new Direction(['w','a','s','d']);
-        this.velocity = 5;
+        this.width = 30;
+        this.height = 50;
+        this.direction = new Direction(['w','a','s','d','shift']);
+        this.velocity = 2;
+        this.impactR = 10;
     }
 
     setDirection (o, direction) {
@@ -66,24 +113,46 @@ class Player {
         this.vx = 0;
         this.vy = 0;
         let directions = this.direction.query();
+        if (directions.includes('shift')) {this.velocity = 1, this.impactR = 5;} else {this.velocity = 2, this.impactR = 10;}
         if (directions.includes('w')) {this.vy += -this.velocity}
         if (directions.includes('s')) {this.vy +=  this.velocity}
         if (directions.includes('a')) {this.vx += -this.velocity}
         if (directions.includes('d')) {this.vx +=  this.velocity}
-        this.x += this.vx;
-        this.y += this.vy;
+
+        if (this.x + this.vx + this.width < canvas.width && this.x + this.vx > 0) {
+            this.x += this.vx;
+        };
+        if (this.y + this.vy + this.height < canvas.height && this.y + this.vy > 0) {
+            this.y += this.vy;
+        }
+        this.impactPoint = [this.x + this.width/2, this.y + this.height/2];
     }
 
     draw () {
         context.fillStyle = '#F0F020';
         context.fillRect(this.x, this.y, this.width, this.height);
+        let directions = this.direction.query();
+        if (directions.includes('shift')) {
+            context.beginPath();
+            context.fillStyle = '#B6B6B6';
+            context.arc(this.impactPoint[0], this.impactPoint[1], this.impactR, 0, 2 * Math.PI);
+            context.fill();
+            context.closePath();
+        }
+        
     }
 }
 
 var player = new Player();
+
+var enemyList = [];
+enemyList.push(new Enemy(100, 100, 10));
 context.fillStyle = '#F0F020';
 var velocity = 1;
 addEventListener("keydown", function (event) {
+    if (event.code === "ShiftLeft" || event.code === "ShiftRight") {
+        player.setDirection(1, 'shift')
+    }
     if (event.code === "KeyW") {
         player.setDirection(1, 'w')
     }
@@ -99,6 +168,9 @@ addEventListener("keydown", function (event) {
 });
 
 addEventListener("keyup", function (event) {
+    if (event.code === "ShiftLeft" || event.code === "ShiftRight") {
+        player.setDirection(0, 'shift')
+    }
     if (event.code === "KeyW") {
         player.setDirection(0, 'w')
     }
@@ -115,8 +187,11 @@ addEventListener("keyup", function (event) {
 
 function update () {  
     context.clearRect(0, 0, canvas.width, canvas.height);
-    player.update()
+    player.update();
     player.draw();
+    enemyList.forEach(function (enemy) {
+        enemy.draw()
+    });
 }
 
-setInterval(update, 50);
+setInterval(update, 10);
