@@ -1,3 +1,31 @@
 {
-    "timing": [1000, 2000, 3000]
+    "timing": [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000],
+    "enemy": [
+        [0, 0, "red"]
+    ],
+    "event": [
+        [0],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "annotation": [   
+        "timing:int", 
+        "type:int (bullet = -1, auto-delete bullet = -2, enemy = positive integer)", 
+        "order:int", 
+        "x:false or int", 
+        "y:false or int", 
+        "r:int", 
+        "vx:int", 
+        "vy:int", 
+        "event:int (delete = 0)"
+    ]
 }

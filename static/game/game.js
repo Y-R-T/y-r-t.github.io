@@ -24,36 +24,19 @@ class Direction {
     }
 }
 
-class bullet {
-    constructor (x, y, r) {
+class Bullet {
+    constructor (x, y, r, auto = false) {
         this.x = x;
         this.y = y;
         this.r = r;
         this.vx = 0;
         this.vy = 0;
+        this.auto = auto;
     }
 
     update () {
         this.x += this.vx;
         this.y += this.vy;
-    }
-
-    setAttr (x=null, y=null, vx=null, vy=null, r=null) {
-        if (x !== null) {
-            this.x = x;
-        }
-        if (y !== null) {
-            this.y = y;
-        }
-        if (vx !== null) {
-            this.vx = vx;
-        }
-        if (vy !== null) {
-            this.vy = vy;
-        }
-        if (r !== null) {
-            this.r = r;
-        }
     }
 
     draw () {
@@ -72,11 +55,15 @@ class Enemy {
         this.r = r;
         this.vx = 0;
         this.vy = 0;
+        this.center = [this.x + this.r, this.y + this.r];
     }
 
-    shot () {
-
+    update () {
+        this.x += this.vx;
+        this.y += this.vy;
+        this.center = [this.x + this.r, this.y + this.r];
     }
+
     draw () {
         context.fillStyle = '#123456';
         context.beginPath();
@@ -126,6 +113,9 @@ class Player {
             this.y += this.vy;
         }
         this.impactPoint = [this.x + this.width/2, this.y + this.height/2];
+
+        //碰撞
+        
     }
 
     draw () {
@@ -147,6 +137,12 @@ var player = new Player();
 
 var enemyList = [];
 enemyList.push(new Enemy(100, 100, 10));
+
+var bulletList = [];
+bulletList.push(new Bullet());
+enemyList[0].vx=1;
+enemyList[0].vy=1;
+
 context.fillStyle = '#F0F020';
 var velocity = 1;
 addEventListener("keydown", function (event) {
@@ -190,8 +186,17 @@ function update () {
     player.update();
     player.draw();
     enemyList.forEach(function (enemy) {
-        enemy.draw()
+        enemy.update();
+        enemy.draw();
     });
+    //enemyList = enemyList.filter(enemy => (enemy.auto === true) && (enemy.x > canvas.width || enemy.x + canvas.width < 0 || enemy.y > canvas.height || enemy.y + canvas.height < 0));
+
+    bulletList.forEach(function (bullet) {
+        bullet.update();
+        bullet.draw();
+    });
+    //bulletList = bulletList.filter(bullet => (bullet.auto === true) && (bullet.x > canvas.width || bullet.x + canvas.width < 0 || bullet.y > canvas.height || bullet.y + canvas.height < 0));
+    
 }
 
 setInterval(update, 10);
