@@ -140,8 +140,8 @@ enemyList.push(new Enemy(100, 100, 10));
 
 var bulletList = [];
 bulletList.push(new Bullet());
-enemyList[0].vx=1;
-enemyList[0].vy=1;
+enemyList[0].vx=0;
+enemyList[0].vy=0;
 
 context.fillStyle = '#F0F020';
 var velocity = 1;
@@ -189,14 +189,20 @@ function update () {
         enemy.update();
         enemy.draw();
     });
-    //enemyList = enemyList.filter(enemy => (enemy.auto === true) && (enemy.x > canvas.width || enemy.x + canvas.width < 0 || enemy.y > canvas.height || enemy.y + canvas.height < 0));
-
+    enemyList = enemyList.filter(enemy => 
+        !(enemy.auto === true && 
+        (enemy.x > canvas.width || enemy.x < 0 || enemy.y > canvas.height || enemy.y < 0))
+      );
+      
     bulletList.forEach(function (bullet) {
         bullet.update();
         bullet.draw();
     });
-    //bulletList = bulletList.filter(bullet => (bullet.auto === true) && (bullet.x > canvas.width || bullet.x + canvas.width < 0 || bullet.y > canvas.height || bullet.y + canvas.height < 0));
-    
+    bulletList = bulletList.filter(bullet => 
+        !(bullet.auto === true && 
+        (bullet.x > canvas.width || bullet.x < 0 || bullet.y > canvas.height || bullet.y < 0))
+      );
+      
 }
 
 setInterval(update, 10);

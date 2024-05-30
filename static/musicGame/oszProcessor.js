@@ -1,9 +1,8 @@
 // oszProcessor.js
 
 // 读取文件内容并将其作为字符串返回
-async function readFileAsList(filePath) {
+async function readFileAsList(response) {
     try {
-        const response = await fetch(filePath);
         const text = await response.text();
         const lines = text.split('\n').map(line => line.trim());
         return lines;
@@ -20,7 +19,7 @@ function extract(linesList) {
     }
 
     let obj = linesList.slice(objStartIndex + 1);
-    let res = [];
+    let res = [[],[],[],[]];
 
     obj.forEach(line => {
         let tmpList = line.split(',');
@@ -41,15 +40,15 @@ function extract(linesList) {
             default:
                 return; // 跳过不符合条件的行
         }
-        res.push([parseInt(tmpList[2]), key]);
+        res[key].push([parseInt(tmpList[2])]);
     });
 
     return res;
 }
 
 // 导出函数
-export async function processFile(filePath) {
-    const linesList = await readFileAsList(filePath);
+export async function processFile(response) {
+    const linesList = await readFileAsList(response);
     if (typeof linesList === 'string') {  // 检查是否返回了错误信息
         throw new Error(linesList);
     }

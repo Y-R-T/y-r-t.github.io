@@ -1,5 +1,4 @@
 import { processFile } from './oszProcessor.js';
-
 var canvas = document.getElementById('Main');
 var context = canvas.getContext('2d');
 
@@ -233,11 +232,9 @@ async function getBeatMap(path) {
     }
 }
 
-const textSurface = new Text()
-
-// noteList
-var timingArray = [];
 function randomBeatMap () {
+    let tmpArray = [];
+    let rand = 0;
     for (let index = 0; index <= 3; index++) {
         tmpArray[index] = [];
         tmpArray[index][0] = 1000
@@ -258,31 +255,6 @@ function randomBeatMap () {
         }
     }
     return tmpArray;
-}
-// 调用 json 
-if (true) {
-    timingArray = await getBeatMap('data/1.json');
-    if (!timingArray) {
-        alert('Failed to load beat map');
-    }
-} 
-else
-// 自选文件
-{
-    const filePath = 'data/succducc - azure (Scotty) [hard].osz';
-    try {
-        timingArray = await processFile(filePath);
-    } catch (error) {
-        alert("读取文件错误")
-    }
-}
-
-// 实例化
-{
-    var keyD = new Key([4, 0], 100, 800, "d", timingArray[0], textSurface)
-    var keyF = new Key([4, 1], 100, 800, "f", timingArray[1], textSurface)
-    var keyJ = new Key([4, 2], 100, 800, "j", timingArray[2], textSurface)
-    var keyK = new Key([4, 3], 100, 800, "k", timingArray[3], textSurface)
 }
 
 document.addEventListener('keydown', function(event) {
@@ -315,11 +287,6 @@ document.addEventListener('keyup', function(event) {
     }
 });
 
-
-var startTime = new Date();
-var duration = 0
-var sumScore = 0
-
 function generate() {
     keyD.generate();
     keyF.generate();
@@ -349,7 +316,6 @@ function score() {
         keyK.scores[5];
     return sum
 }
-
 
 function setDuration(duration) {
     keyD.setDuration(duration);
@@ -416,6 +382,74 @@ function update() {
     requestAnimationFrame(update);
 }
 
-requestAnimationFrame(update);
+// noteList
+var timingArray = [];
+var duration = 0;
+var sumScore = 0;
+var sumScore;
+var startTime;
+const textSurface = new Text()
+var keyD;
+var keyF;
+var keyJ;
+var keyK;
+
+document.getElementById('triggerButton').addEventListener('click', async function() {
+    if (confirm("自己导入osz谱面文件吗？")) {
+        // 自选文件
+        timingArray = await new Promise((resolve, reject) => {
+            const fileInput = document.getElementById('fileInput');
+            fileInput.addEventListener('change', async function(event) {
+                const selectedFile = event.target.files[0];
+                if (selectedFile) {
+                    try {
+                        const timingArray = await processFile(selectedFile);
+                        console.log("Key0: " + String(timingArray[0]));
+                        console.log("Key1: " + String(timingArray[1]));
+                        console.log("Key2: " + String(timingArray[2]));
+                        console.log("Key3: " + String(timingArray[3]));
+
+                        // 在文件处理完成后解析 Promise
+                        resolve(timingArray);
+                    } catch (error) {
+                        alert("读取文件错误");
+                        reject(error);
+                    }
+                } else {
+                    alert("所选文件为空。");
+                    reject(new Error("No file selected"));
+                }
+            });
+
+            // 触发文件输入框的点击事件
+            fileInput.click();
+        }).catch(error => {
+            console.error(error);
+        });
+    } else {
+        if (confirm("使用网站预设谱面吗？（否则为随机生成）")) {
+            // 调用 json 
+            timingArray = await getBeatMap('data/1.json');
+            if (!timingArray) {
+                alert('Failed to load beat map');
+            }
+        } else {
+            timingArray = randomBeatMap()
+        }
+    }
+    document.getElementById('triggerButton').style.display = 'none';
+    
+    {
+        keyD = new Key([4, 0], 100, 800, "d", timingArray[0], textSurface)
+        keyF = new Key([4, 1], 100, 800, "f", timingArray[1], textSurface)
+        keyJ = new Key([4, 2], 100, 800, "j", timingArray[2], textSurface)
+        keyK = new Key([4, 3], 100, 800, "k", timingArray[3], textSurface)
+    }
+    startTime = new Date();
+    
+    requestAnimationFrame(update);
+});
+
+
 
 
