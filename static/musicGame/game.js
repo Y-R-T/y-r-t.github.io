@@ -89,10 +89,6 @@ class Key {
         this.down = false;
     }
 
-    setDuration(duration) {
-        this.duration = duration
-    }
-
     generate() { // ms
         if (this.noteTimeList[this.index] < this.duration + 950) {
             this.noteList.push(new Note(this.noteTimeList[this.index]))
@@ -259,16 +255,19 @@ function randomBeatMap () {
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'd') {
-        keyD.click()
+        keyD.click();
     }
     if (event.key === 'f') {
-        keyF.click()
+        keyF.click();
     }
     if (event.key === 'j') {
-        keyJ.click()
+        keyJ.click();
     }
     if (event.key === 'k') {
-        keyK.click()
+        keyK.click();
+    }
+    if (event.key === ' ') {
+        running = !running;
     }
 });
 
@@ -286,6 +285,7 @@ document.addEventListener('keyup', function(event) {
         keyK.keyup()
     }
 });
+
 
 function generate() {
     keyD.generate();
@@ -318,10 +318,10 @@ function score() {
 }
 
 function setDuration(duration) {
-    keyD.setDuration(duration);
-    keyF.setDuration(duration);
-    keyJ.setDuration(duration);
-    keyK.setDuration(duration);
+    keyD.duration = duration;
+    keyF.duration = duration;
+    keyJ.duration = duration;
+    keyK.duration = duration;
 }
 
 function calculateACC() {
@@ -357,26 +357,26 @@ function calculateACC() {
 function update() {
 
     context.clearRect(0, 0, canvas.width, canvas.height);
+    if (running) {
+        duration = new Date() - startTime;
+    } else {
+        startTime = new Date() -  duration;
+    }
+    
+    if (running) {
+        setDuration(duration);
+        generate();
+        keyUpdate();
+        sumScore = score();
+        textSurface.score = sumScore;
+        textSurface.acc = calculateACC();
+    }
 
-    duration = new Date() - startTime;
-
-    setDuration(duration);
-    generate();
-    keyUpdate();
     draw();
-
-    sumScore = score();
-
-    textSurface.score = sumScore;
-
-    textSurface.acc = calculateACC();
-
+    
     textSurface.showACC()    
-
     textSurface.showScore()
-
     textSurface.showJudge()
-
     textSurface.showCombo()
 
     requestAnimationFrame(update);
@@ -393,6 +393,7 @@ var keyD;
 var keyF;
 var keyJ;
 var keyK;
+var running = true;
 
 document.getElementById('triggerButton').addEventListener('click', async function() {
     if (confirm("自己导入osu谱面文件吗？")) {
