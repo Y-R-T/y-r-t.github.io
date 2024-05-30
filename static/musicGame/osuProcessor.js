@@ -1,4 +1,4 @@
-// oszProcessor.js
+// osuProcessor.js
 
 // 读取文件内容并将其作为字符串返回
 async function readFileAsList(response) {

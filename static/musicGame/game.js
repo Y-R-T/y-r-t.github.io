@@ -1,4 +1,4 @@
-import { processFile } from './oszProcessor.js';
+import { processFile } from './osuProcessor.js';
 var canvas = document.getElementById('Main');
 var context = canvas.getContext('2d');
 
@@ -388,14 +388,14 @@ var duration = 0;
 var sumScore = 0;
 var sumScore;
 var startTime;
-const textSurface = new Text()
+const textSurface = new Text();
 var keyD;
 var keyF;
 var keyJ;
 var keyK;
 
 document.getElementById('triggerButton').addEventListener('click', async function() {
-    if (confirm("自己导入osz谱面文件吗？")) {
+    if (confirm("自己导入osu谱面文件吗？")) {
         // 自选文件
         timingArray = await new Promise((resolve, reject) => {
             const fileInput = document.getElementById('fileInput');
