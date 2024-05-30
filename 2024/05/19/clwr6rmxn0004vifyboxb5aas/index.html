@@ -450,11 +450,13 @@
 				<span class="leftbar-banner-title text-white">Ruotian&#39;s Blog</span>
 				
 				
+					<span class="leftbar-banner-subtitle text-white"><span class='hitokoto'></span></span>
+				
 			</div>
 			
 			
 				<ul id='leftbar_part1_menu' class='leftbar-menu'>
-					<li class='leftbar-menu-item'><a href='/'>首页</a></li><li class='leftbar-menu-item'><a href='/archives'>归档</a></li><li class='leftbar-menu-item leftbar-menu-item-haschildren'><a no-pjax onclick='return false;'>二级菜单</a><ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'><li class='leftbar-menu-item leftbar-menu-item-haschildren'><a no-pjax onclick='return false;'>三级菜单</a><ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'><li class='leftbar-menu-item'><a href='/'>首页</a></li></ul></li></ul></li>
+					<li class='leftbar-menu-item'><a href='/'>首页</a></li><li class='leftbar-menu-item'><a href='/archives'>归档</a></li><li class='leftbar-menu-item leftbar-menu-item-haschildren'><a no-pjax onclick='return false;'>二级菜单</a><ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'><li class='leftbar-menu-item'><a href='/static/index.html'>小东西</a></li></ul></li>
 				</ul>
 			
 			<div class="card-body text-center leftbar-search-button">
@@ -528,14 +530,6 @@
 												<a href="/" rel='noopener' target='_blank'>aaa</a>
 											</div>
 										
-											<div class='site-author-links-item'>
-												<a href="/" rel='noopener' target='_blank'>bbb</a>
-											</div>
-										
-											<div class='site-author-links-item'>
-												<a href="/" rel='noopener' target='_blank'>ccc</a>
-											</div>
-										
 									</div>
 								
 							
@@ -545,14 +539,6 @@
 											
 												<li class='site-friend-links-item'>
 													<a href='/' rel='noopener' target='_blank'>aaa</a>
-												</li>
-											
-												<li class='site-friend-links-item'>
-													<a href='/' rel='noopener' target='_blank'>bbb</a>
-												</li>
-											
-												<li class='site-friend-links-item'>
-													<a href='/' rel='noopener' target='_blank'>ccc</a>
 												</li>
 											
 										</ul>
@@ -811,6 +797,26 @@ Test © 2024 by Ruotian is lice...`,
 		
 <script src="/argontheme.js"></script>
 
+		
+			<script>
+				window.MathJax = {
+					tex: {
+						inlineMath: [["$", "$"], ["\\\\(", "\\\\)"]],
+						displayMath: [['$$','$$']],
+						processEscapes: true,
+						packages: {'[+]': ['noerrors']}
+					},
+					options: {
+						skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+						ignoreHtmlClass: 'tex2jax_ignore',
+						processHtmlClass: 'tex2jax_process'
+					},
+					loader: {
+						load: ['[tex]/noerrors']
+					}
+				};
+			</script>
+			<script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" id="MathJax-script" async></script>
 		
 		
 		
