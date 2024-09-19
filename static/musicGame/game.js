@@ -19,6 +19,7 @@ class Text {
         let tmp = String(this.acc * 100);
         context.fillText(tmp.substr(0,4) + "%", 50, canvas.width - 50);
     }
+    
     showScore() {
         context.fillStyle = 'blue';
         context.fillText(this.score, 50, 45);
