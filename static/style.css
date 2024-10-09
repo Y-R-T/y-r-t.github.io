@@ -2,3 +2,8 @@ body {
     background-color: #f4f4f4;
 }
 
+#header-content {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
