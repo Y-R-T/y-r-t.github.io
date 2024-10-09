@@ -1,46 +1,67 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="modal.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>ruotian的网站</title>
 </head>
 <body>
-    <div id="header">
-        <h1 style="margin-bottom:0;">Get-MIT-President</h1>
-        <p><a href="get-mit-president/index.html">Click here!</a></p>
-        <h1 style="margin-bottom:0;">Simple Timer</h1>
-        <p><a href="Simple-Timer/index.html">Click here!</a></p>
-        <h1 style="margin-bottom:0;">Word Counter</h1>
-        <p><a href="Word-Counter/index.html">Click here!</a></p> 
-        <h1 style="margin-bottom:0;">Real-Time Word Counter</h1>
-        <p><a href="editor/index.html">Click here!</a></p>   
-        <h1 style="margin-bottom:0;">Music Game</h1>
-        <p><a href="musicGame/index.html">Click here!</a></p>       
-        <h1 style="margin-bottom:0;">Bird Game</h1>
-        <p><a href="bird/index.html">Click here!</a></p> 
-        <h1 style="margin-bottom:0;">Show Input</h1>
-        <p><a href="show/index.html">Click here!</a></p>
-        <h1 style="margin-bottom:0;">Game</h1>
-        <p><a href="game/index.html">Click here!</a></p>      
-        <h1 style="margin-bottom:0;">3D Game</h1>
-        <p><a href="3DGame/index.html">Click here!</a></p>    
-        <!-- 触发模态框的按钮 -->
-        <button id="coffeeBtn"><img id="img_coffee" src="coffee.svg" alt="coffee"></button>
-
-        <!-- 模态框 -->
-        <div id="coffeeModal" class="modal">
-
-        <!-- 模态框内容 -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="inner-coffee" src="img/coffee.svg" alt="coffee">
-            <p>这是一个模态弹窗，您可以在这里放置内容。</p>
-        </div>
-
+    <div class="container" id="header">
+        <div class="row">
+            <div class="col">
+                <h1>ruotian的网站</h1>
+            </div>
         </div>
     </div>
-<script src="coffeeModal.js"></script>
+    <div class="container" id="main-content">
+        <div class="row">
+            <div class="col-6 col-sm-4 col-md-2">
+                <h3>Get-MIT-President</h3>
+                <p><a href="get-mit-president/index.html">Click here!</a></p>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-2">
+                <h3>Simple Timer</h3>
+                <p><a href="Simple-Timer/index.html">Click here!</a></p>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-2">
+                <h3>Word Counter</h3>
+                <p><a href="Word-Counter/index.html">Click here!</a></p> 
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-2">
+                <h3>Real-Time Word Counter</h3>
+                <p><a href="editor/index.html">Click here!</a></p>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-2">
+                <h3>Music Game</h3>
+                <p><a href="musicGame/index.html">Click here!</a></p>       
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-2">
+                <h3>Bird Game</h3>
+                <p><a href="bird/index.html">Click here!</a></p> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-sm-4 col-md-2">
+                <h3>Show Input</h3>
+                <p><a href="show/index.html">Click here!</a></p>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-2">
+                <h3>Game</h3>
+                <p><a href="game/index.html">Click here!</a></p>  
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-2">
+                <h3>3D Game</h3>
+                <p><a href="3DGame/index.html">Click here!</a></p>
+        </div></div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
