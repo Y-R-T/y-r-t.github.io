@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>关于开源换脸程序roop的一些安装问题和可能的解决办法</title>
+      <link href="/2025/01/03/cm5gg2t400000zt07653ld3b7/"/>
+      <url>/2025/01/03/cm5gg2t400000zt07653ld3b7/</url>
+      
+        <content type="html"><![CDATA[<p>此为本文所指的<a href="https://github.com/s0md3v/roop">roop</a>。</p><p>本文所用设备为M芯片Mac，可能对于intelMac&#x2F;Window&#x2F;Linux等系统不生效。</p><p>软件操作针对vscode，其他软件请自行考虑使用。</p><h2 id="在一切之前"><a href="#在一切之前" class="headerlink" title="在一切之前"></a>在一切之前</h2><p>请首先阅读<a href="https://github.com/s0md3v/roop/wiki/1.-Installation">原安装指南</a>（可能需要科学上网手段）</p><h2 id="1-python程序环境安装不上"><a href="#1-python程序环境安装不上" class="headerlink" title="1.python程序环境安装不上"></a>1.python程序环境安装不上</h2><p>解决办法：尝试使用venv：</p><ol><li>安装python3.10</li><li>打开vscode</li><li>在一个<code>.py</code>程序下点击右下角的版本号</li><li>点击<code>Create Virtual Environment</code></li><li>点击<code>.venv</code></li><li>点击<code>3.10</code>开头的版本</li><li>点击<code>requirement.txt</code></li><li>等待很长一段时间下载</li></ol><h2 id="2-python不断报错tk安装问题"><a href="#2-python不断报错tk安装问题" class="headerlink" title="2.python不断报错tk安装问题"></a>2.python不断报错tk安装问题</h2><p>如：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;安装目录/roop-main/run.py&quot;, line 3, in &lt;module&gt;</span><br><span class="line">    from roop import core</span><br><span class="line">  File &quot;安装目录/roop-main/roop/core.py&quot;, line 20, in &lt;module&gt;</span><br><span class="line">    import roop.ui as ui</span><br><span class="line">  File &quot;安装目录/roop-main/roop/ui.py&quot;, line 4, in &lt;module&gt;</span><br><span class="line">    import customtkinter as ctk</span><br><span class="line">  File &quot;安装目录/roop-main/.venv/lib/python3.10/site-packages/customtkinter/__init__.py&quot;, line 5, in &lt;module&gt;</span><br><span class="line">    from tkinter import Variable, StringVar, IntVar, DoubleVar, BooleanVar</span><br><span class="line">  File &quot;/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/tkinter/__init__.py&quot;, line 37, in &lt;module&gt;</span><br><span class="line">    import _tkinter # If this fails your Python may not be configured for Tk</span><br><span class="line">ModuleNotFoundError: No module named &#x27;_tkinter&#x27;</span><br></pre></td></tr></table></figure><p>解决办法：</p><p>命令行运行<code>brew install python-tk@3.10  </code></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>呃呃呃是不是好久没更新了</title>
       <link href="/2024/12/26/cm5431v1q0000v107d6ne9oaq/"/>
       <url>/2024/12/26/cm5431v1q0000v107d6ne9oaq/</url>
