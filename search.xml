@@ -5,8 +5,8 @@
     
     <entry>
       <title>关于开源换脸程序roop的一些安装问题和可能的解决办法</title>
-      <link href="/2025/01/03/cm5gg2t400000zt07653ld3b7/"/>
-      <url>/2025/01/03/cm5gg2t400000zt07653ld3b7/</url>
+      <link href="/2025/01/03/cm5gg4cdq0006r0076y5i3k3f/"/>
+      <url>/2025/01/03/cm5gg4cdq0006r0076y5i3k3f/</url>
       
         <content type="html"><![CDATA[<p>此为本文所指的<a href="https://github.com/s0md3v/roop">roop</a>。</p><p>本文所用设备为M芯片Mac，可能对于intelMac&#x2F;Window&#x2F;Linux等系统不生效。</p><p>软件操作针对vscode，其他软件请自行考虑使用。</p><h2 id="在一切之前"><a href="#在一切之前" class="headerlink" title="在一切之前"></a>在一切之前</h2><p>请首先阅读<a href="https://github.com/s0md3v/roop/wiki/1.-Installation">原安装指南</a>（可能需要科学上网手段）</p><h2 id="1-python程序环境安装不上"><a href="#1-python程序环境安装不上" class="headerlink" title="1.python程序环境安装不上"></a>1.python程序环境安装不上</h2><p>解决办法：尝试使用venv：</p><ol><li>安装python3.10</li><li>打开vscode</li><li>在一个<code>.py</code>程序下点击右下角的版本号</li><li>点击<code>Create Virtual Environment</code></li><li>点击<code>.venv</code></li><li>点击<code>3.10</code>开头的版本</li><li>点击<code>requirement.txt</code></li><li>等待很长一段时间下载</li></ol><h2 id="2-python不断报错tk安装问题"><a href="#2-python不断报错tk安装问题" class="headerlink" title="2.python不断报错tk安装问题"></a>2.python不断报错tk安装问题</h2><p>如：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;安装目录/roop-main/run.py&quot;, line 3, in &lt;module&gt;</span><br><span class="line">    from roop import core</span><br><span class="line">  File &quot;安装目录/roop-main/roop/core.py&quot;, line 20, in &lt;module&gt;</span><br><span class="line">    import roop.ui as ui</span><br><span class="line">  File &quot;安装目录/roop-main/roop/ui.py&quot;, line 4, in &lt;module&gt;</span><br><span class="line">    import customtkinter as ctk</span><br><span class="line">  File &quot;安装目录/roop-main/.venv/lib/python3.10/site-packages/customtkinter/__init__.py&quot;, line 5, in &lt;module&gt;</span><br><span class="line">    from tkinter import Variable, StringVar, IntVar, DoubleVar, BooleanVar</span><br><span class="line">  File &quot;/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/tkinter/__init__.py&quot;, line 37, in &lt;module&gt;</span><br><span class="line">    import _tkinter # If this fails your Python may not be configured for Tk</span><br><span class="line">ModuleNotFoundError: No module named &#x27;_tkinter&#x27;</span><br></pre></td></tr></table></figure><p>解决办法：</p><p>命令行运行<code>brew install python-tk@3.10  </code></p>]]></content>
       
@@ -18,8 +18,8 @@
     
     <entry>
       <title>呃呃呃是不是好久没更新了</title>
-      <link href="/2024/12/26/cm5431v1q0000v107d6ne9oaq/"/>
-      <url>/2024/12/26/cm5431v1q0000v107d6ne9oaq/</url>
+      <link href="/2024/12/26/cm5gg4cdq000ar0073qw84s17/"/>
+      <url>/2024/12/26/cm5gg4cdq000ar0073qw84s17/</url>
       
         <content type="html"><![CDATA[<p>最近想写写（<br>等考完这次toefl就写点大的，填填坑或者写点技术或者数学或者哲学？idk，没想法。</p><p>哎不是，我discussion评论系统怎么爆了？？？</p>]]></content>
       
@@ -31,8 +31,8 @@
     
     <entry>
       <title>关于AI的一些思考</title>
-      <link href="/2024/06/24/clxt8o17c0000zscv34x77xrh/"/>
-      <url>/2024/06/24/clxt8o17c0000zscv34x77xrh/</url>
+      <link href="/2024/06/24/cm5gg4cdq0009r0076rv58gdd/"/>
+      <url>/2024/06/24/cm5gg4cdq0009r0076rv58gdd/</url>
       
         <content type="html"><![CDATA[<h2 id="强人工智能可以实现吗？"><a href="#强人工智能可以实现吗？" class="headerlink" title="强人工智能可以实现吗？"></a>强人工智能可以实现吗？</h2><p>我的答案是可以。</p><p>强人工智能通常代指一种可以依照自身想法行动的机器人，现存绝大部分反对观点的理由是，计算机无法模拟出像人脑一样思考的模式。</p><p>但是……真的不可以吗？</p><p>对于这个问题，我们首先要明确所谓“像人脑一样的思考”。</p><p>人类的思考一般被认为是由大量神经元之间的电信号交流所自发涌现的一种现象，而也是这种神奇的现象被认作是无法在计算机上实现的。</p><p>而这一点便引申出了本文的核心—-这种现象或许可以在计算机上发生。</p><h2 id="人类是怎么生活的？"><a href="#人类是怎么生活的？" class="headerlink" title="人类是怎么生活的？"></a>人类是怎么生活的？</h2><blockquote><p>正在施工中</p></blockquote><blockquote><p>关于AI的一些思考 © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -50,8 +50,8 @@
     
     <entry>
       <title>这几天搞的小东西</title>
-      <link href="/2024/05/29/clwt1ztwx000cgyfy1kkkff76/"/>
-      <url>/2024/05/29/clwt1ztwx000cgyfy1kkkff76/</url>
+      <link href="/2024/05/29/cm5gg4cdr000kr0077sct4tyy/"/>
+      <url>/2024/05/29/cm5gg4cdr000kr0077sct4tyy/</url>
       
         <content type="html"><![CDATA[<p><a href="https://y-r-t.github.io/static/bird/index.html">Bird Game</a> &#x2F;&#x2F; v0.1.0</p><p><a href="https://y-r-t.github.io/static/musicGame/index.html">Music Game</a> &#x2F;&#x2F; v0.4.0</p><p><a href="https://y-r-t.github.io/static/game/index.html">STG Game</a> &#x2F;&#x2F; 未完成</p><p><a href="https://y-r-t.github.io/static/3DGame/index.html">3D Game</a> &#x2F;&#x2F; 未完成</p><p><a href="https://y-r-t.github.io/static/get-mit-president/index.html">Get MITP</a> &#x2F;&#x2F; 改编</p><p><a href="https://y-r-t.github.io/static/editor/index.html">Editor</a> &#x2F;&#x2F; 可以统计和保存txt的小东西 v0.1.0</p><p><a href="https://y-r-t.github.io/static/predict/index.html">Predict</a> &#x2F;&#x2F; 未完成</p><p><a href="https://y-r-t.github.io/static/Simple-Timer/index.html">Timer</a> &#x2F;&#x2F; 极简 v0.1.0 </p><p><a href="https://y-r-t.github.io/static/textFormatting/index.html">Formatting</a> &#x2F;&#x2F; 自用， 调节双语字幕格式 v0.1.0</p><p><a href="https://y-r-t.github.io/static/show/index.html">Show</a> &#x2F;&#x2F; 显示键盘输入 v0.1.0</p><p><a href="https://y-r-t.github.io/static/Word-Counter/index.html">Counter</a> &#x2F;&#x2F; 极简低配counter v0.1.0</p><blockquote><p>这几天搞的小东西 © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -63,8 +63,8 @@
     
     <entry>
       <title>Music Game 更新记录</title>
-      <link href="/2024/05/29/clwt1ztwl0000gyfybtdd1xfy/"/>
-      <url>/2024/05/29/clwt1ztwl0000gyfybtdd1xfy/</url>
+      <link href="/2024/05/29/cm5gg4cdp0002r007dguvg38f/"/>
+      <url>/2024/05/29/cm5gg4cdp0002r007dguvg38f/</url>
       
         <content type="html"><![CDATA[<p>v0.1.0 2024-05-29 加入了ACC，优化布局，加入按键显示。 </p><p>v0.2.0 2024-05-30 用户可以自行选择谱面（随机生成，网站内部谱面，导入自己的（方法：将osz文件改为zip解压并找到对应难度的osu文件导入））</p><p>v0.3.0 2024-05-30 加入空格暂停键</p><p>点击这里<a href="https://y-r-t.github.io/static/musicGame">Music Game</a></p><blockquote><p>Music Game 更新记录 © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -82,8 +82,8 @@
     
     <entry>
       <title>Python中的if __name__ == &quot;__main__&quot;是什么意思？</title>
-      <link href="/2024/05/23/clwt1ztwt0004gyfy0krs7tgd/"/>
-      <url>/2024/05/23/clwt1ztwt0004gyfy0krs7tgd/</url>
+      <link href="/2024/05/23/cm5gg4cdo0001r0071hv45vhi/"/>
+      <url>/2024/05/23/cm5gg4cdo0001r0071hv45vhi/</url>
       
         <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def main():</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure><p>对于很多将 Python 作为第一个语言学习的新手，通常会对以上的<code>if __name__ == &quot;__main__&quot;</code>感到迷惑，那么它究竟是什么呢？</p><p>首先，我们要知道，在 Python 中运行<code> import &lt;module&gt;</code>的时候，实质上就是运行一次你所导入的模块（<code>&lt;module&gt;</code>）。</p><p>而<code>__name__</code>是一个 Python 的一个内置变量，当你的<code>.py</code>文件被直接运行时，该文件的<code>__name__</code>就会被赋值为<code>__main__</code>，所以当我们直接运行开头那个程序时，<code>if</code>内的语句<code>main()</code>就将可以执行。</p><p>但是，当我们使用<code>import</code>的方式导入这个文件的代码，情况便有所不同。当一个<code>.py</code>文件被<code>import</code>到你的主文件时，那个被引入的文件的<code>__name__</code>属性会被赋值为其文件名（仅保留<code>.py</code>前面的部分）。所以<code> if __name__ == &quot;__main__&quot;</code>检测时，程序发现<code>__name__</code>属性的值并不是<code>&quot;__main__&quot;</code>（而是文件名），导致检查返回了<code>false</code>，内部的语句也就不会被执行了。</p><blockquote><p>Python中的if <strong>name</strong> &#x3D;&#x3D; “<strong>main</strong>“是什么意思？ © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -101,8 +101,8 @@
     
     <entry>
       <title>Malody-4k-Regular-1dan过了lol！！！</title>
-      <link href="/2024/05/20/clwt1ztwt0003gyfyhhaw6h6l/"/>
-      <url>/2024/05/20/clwt1ztwt0003gyfyhhaw6h6l/</url>
+      <link href="/2024/05/20/cm5gg4cdm0000r007hcp1g3xg/"/>
+      <url>/2024/05/20/cm5gg4cdm0000r007hcp1g3xg/</url>
       
         <content type="html"><![CDATA[<p>好耶！！！！！<br><img src="https://y-r-t.github.io/img/000003.png" alt="dan1"></p><blockquote><p>Malody-4k-Regular-1dan过了lol！！！ © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -113,9 +113,22 @@
     
     
     <entry>
+      <title>Hello World</title>
+      <link href="/2024/05/20/cm5gg4cdq0005r007c12m7n62/"/>
+      <url>/2024/05/20/cm5gg4cdq0005r007c12m7n62/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何在Github上获得静态网页？</title>
-      <link href="/2024/05/19/clwt1ztww0009gyfy7i9na3pa/"/>
-      <url>/2024/05/19/clwt1ztww0009gyfy7i9na3pa/</url>
+      <link href="/2024/05/19/cm5gg4cdq000cr0076bd7dp2y/"/>
+      <url>/2024/05/19/cm5gg4cdq000cr0076bd7dp2y/</url>
       
         <content type="html"><![CDATA[<p>准备：GitHub账号</p><ol><li><p>登陆你的 github 账号</p></li><li><p>点击左侧的 New，如图：<br><img src="https://y-r-t.github.io/img/000004.png" alt="new"> </p></li><li><p>在 Repository name 栏填写<code>&lt;你的用户名&gt;.github.io</code>，点击确认，如图：</p></li></ol><p><img src="https://y-r-t.github.io/img/000005.png" alt="创建"> </p><blockquote><p>如何在Github上获得静态网页？ © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -133,8 +146,8 @@
     
     <entry>
       <title>Mac如何用Hexo建一个blog？</title>
-      <link href="/2024/05/19/clwt1ztww000agyfyhcpf350x/"/>
-      <url>/2024/05/19/clwt1ztww000agyfyhcpf350x/</url>
+      <link href="/2024/05/19/cm5gg4cdr000er007f6tt7x6t/"/>
+      <url>/2024/05/19/cm5gg4cdr000er007f6tt7x6t/</url>
       
         <content type="html"><![CDATA[<p>准备：Mac电脑，github账号</p><h2 id="一、-配环境"><a href="#一、-配环境" class="headerlink" title="一、 配环境"></a>一、 配环境</h2><ol><li><a href="https://nodejs.org/">下载 Node.js</a></li><li>安装 homebrew</li></ol> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;</span><br></pre></td></tr></table></figure><h2 id="二、安装-Hexo"><a href="#二、安装-Hexo" class="headerlink" title="二、安装 Hexo"></a>二、安装 Hexo</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><h2 id="三、初始化"><a href="#三、初始化" class="headerlink" title="三、初始化"></a>三、初始化</h2><p>将 <code>&lt;folder&gt;</code> 替换为你想要作为网站本地目录的文件夹</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><h2 id="四、配置"><a href="#四、配置" class="headerlink" title="四、配置"></a>四、配置</h2><p>打开你刚才选择的 <code>&lt;folder&gt;</code> 中的 <code>_config.yml</code> 文件， 如图更改内容：</p><p><img src="https://y-r-t.github.io/img/000001.png" alt="网站设置"> </p><p><img src="https://y-r-t.github.io/img/000002.png" alt="网址设置"><br>其余内容解释请访问 <a href="https://hexo.io/zh-cn/docs/configuration">官方解释页面</a></p><h2 id="五、部署"><a href="#五、部署" class="headerlink" title="五、部署"></a>五、部署</h2><ol><li><p>建立一个名为 <code>&lt;你的 GitHub 用户名&gt;.github.io</code> 的公开仓库，教程在<a href="https://y-r-t.github.io/2024/05/19/clwdntev60001xicv7vj31zeo/">这里</a></p></li><li><p>打开刚才的 <code>_config.yml</code> 文件，编辑下列内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;刚才建立的仓库的完整url&gt; </span><br><span class="line">  branch: main</span><br><span class="line">  message: Site updated:&#123;&#123; now(&#x27;YYYY-MM-DD HH:mm:ss&#x27;) &#125;&#125;</span><br></pre></td></tr></table></figure></li><li><p>发布</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure></li></ol><h2 id="六、后续更新blog"><a href="#六、后续更新blog" class="headerlink" title="六、后续更新blog"></a>六、后续更新blog</h2><ul><li>清除生成内容 <code>hexo clean</code></li><li>生成内容 <code>hexo generate</code></li><li>上传内容 <code>hexo deploy</code></li></ul><blockquote><p>Mac如何用Hexo建一个blog？ © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -152,23 +165,10 @@
     
     <entry>
       <title>Test</title>
-      <link href="/2024/05/19/clwt1ztwq0001gyfy5sqw0x8y/"/>
-      <url>/2024/05/19/clwt1ztwq0001gyfy5sqw0x8y/</url>
+      <link href="/2024/05/19/cm5gg4cdp0004r007fem114kq/"/>
+      <url>/2024/05/19/cm5gg4cdp0004r007fem114kq/</url>
       
         <content type="html"><![CDATA[<h2 id="This-is-a-test"><a href="#This-is-a-test" class="headerlink" title="This is a test"></a>This is a test</h2><p><a href="https://osu.ppy.sh/users/24348003"><img src="https://osu-sig.vercel.app/card?user=ruotian&mode=mania&animation=true" alt="My SVG Image"></a></p><p><em>hey</em></p><blockquote><p>Test © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0</p></blockquote>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2024/05/18/clwt1ztwu0005gyfy5wxbg08d/"/>
-      <url>/2024/05/18/clwt1ztwu0005gyfy5wxbg08d/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
       
