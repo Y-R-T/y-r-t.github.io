@@ -3,20 +3,20 @@
 <html class="article-header-style-default">
 <head>
 	
-	<title>关于开源换脸程序roop的一些安装问题和可能的解决办法 - Ruotian&#39;s Blog</title>
+	<title>如何清理Mac中占用大量空间的系统数据和应用？ - Ruotian&#39;s Blog</title>
 	<meta charset="utf-8">
 	
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	
-	<meta name="description" content="此为本文所指的roop。 本文所用设备为M芯片Mac，可能对于intelMac&#x2F;Window&#x2F;Linux等系统不生效。 软件操作针对vscode，其他软件请自行考虑使用。 在一切之前请首先阅读原安装指南（可能需要科学上网手段） 1.python程序环境安装不上解决办法：尝试使用venv：  安装python3.10 打开vscode 在一个.py程序下点击右下角的版本号 点击C">
+	<meta name="description" content="首先是一条非常重要的命令du。1du -sh .&#x2F;* 2&gt;&#x2F;dev&#x2F;null | sort -h   众所周知，原生的Mac OS无法很快的列出每个文件夹的大小，而这个du命令可以将当前选中的文件夹里可以读取的文件&#x2F;文件夹按照从小到大的顺序列出，并给出具体大小。也就是说，当你想要清除大文件时，可以从下向上逐个考虑清理，而不是挨个点开get info查询大小。 很多大文件是隐藏的或者">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于开源换脸程序roop的一些安装问题和可能的解决办法">
-<meta property="og:url" content="https://y-r-t.github.io/2025/01/03/cm5gg4cdq0006r0076y5i3k3f/index.html">
+<meta property="og:title" content="如何清理Mac中占用大量空间的系统数据和应用？">
+<meta property="og:url" content="https://y-r-t.github.io/2025/01/05/cm5jpm9v4000hqj07fy990kvp/index.html">
 <meta property="og:site_name" content="Ruotian&#39;s Blog">
-<meta property="og:description" content="此为本文所指的roop。 本文所用设备为M芯片Mac，可能对于intelMac&#x2F;Window&#x2F;Linux等系统不生效。 软件操作针对vscode，其他软件请自行考虑使用。 在一切之前请首先阅读原安装指南（可能需要科学上网手段） 1.python程序环境安装不上解决办法：尝试使用venv：  安装python3.10 打开vscode 在一个.py程序下点击右下角的版本号 点击C">
+<meta property="og:description" content="首先是一条非常重要的命令du。1du -sh .&#x2F;* 2&gt;&#x2F;dev&#x2F;null | sort -h   众所周知，原生的Mac OS无法很快的列出每个文件夹的大小，而这个du命令可以将当前选中的文件夹里可以读取的文件&#x2F;文件夹按照从小到大的顺序列出，并给出具体大小。也就是说，当你想要清除大文件时，可以从下向上逐个考虑清理，而不是挨个点开get info查询大小。 很多大文件是隐藏的或者">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-01-03T07:25:21.000Z">
-<meta property="article:modified_time" content="2025-01-03T07:38:50.862Z">
+<meta property="article:published_time" content="2025-01-05T14:19:31.000Z">
+<meta property="article:modified_time" content="2025-01-05T14:27:32.976Z">
 <meta property="article:author" content="Ruotian">
 <meta name="twitter:card" content="summary">
 
@@ -588,13 +588,13 @@
 	<article class="post post-full card bg-white shadow-sm border-0 ">
 	<header class="post-header text-center">
 		
-		<a class="post-title" href="/2025/01/03/cm5gg4cdq0006r0076y5i3k3f/">关于开源换脸程序roop的一些安装问题和可能的解决办法</a>
+		<a class="post-title" href="/2025/01/05/cm5jpm9v4000hqj07fy990kvp/">如何清理Mac中占用大量空间的系统数据和应用？</a>
 		<div class="post-meta">
 			
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2025-1-3 15:25:21 | 编辑于 2025-1-3 15:38:50">2025-1-3 15:25
+							<time title="发布于 2025-1-5 22:19:31 | 编辑于 2025-1-5 22:27:32">2025-1-5 22:19
 							</time>
 						</div>
 					
@@ -613,7 +613,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							327 字
+							229 字
 						</div>
 					
 						
@@ -629,27 +629,15 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<p>此为本文所指的<a target="_blank" rel="noopener" href="https://github.com/s0md3v/roop">roop</a>。</p>
-<p>本文所用设备为M芯片Mac，可能对于intelMac&#x2F;Window&#x2F;Linux等系统不生效。</p>
-<p>软件操作针对vscode，其他软件请自行考虑使用。</p>
-<h2 id="在一切之前"><a href="#在一切之前" class="headerlink" title="在一切之前"></a>在一切之前</h2><p>请首先阅读<a target="_blank" rel="noopener" href="https://github.com/s0md3v/roop/wiki/1.-Installation">原安装指南</a>（可能需要科学上网手段）</p>
-<h2 id="1-python程序环境安装不上"><a href="#1-python程序环境安装不上" class="headerlink" title="1.python程序环境安装不上"></a>1.python程序环境安装不上</h2><p>解决办法：尝试使用venv：</p>
-<ol>
-<li>安装python3.10</li>
-<li>打开vscode</li>
-<li>在一个<code>.py</code>程序下点击右下角的版本号</li>
-<li>点击<code>Create Virtual Environment</code></li>
-<li>点击<code>.venv</code></li>
-<li>点击<code>3.10</code>开头的版本</li>
-<li>点击<code>requirement.txt</code></li>
-<li>等待很长一段时间下载</li>
-</ol>
-<h2 id="2-python不断报错tk安装问题"><a href="#2-python不断报错tk安装问题" class="headerlink" title="2.python不断报错tk安装问题"></a>2.python不断报错tk安装问题</h2><p>如：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;安装目录/roop-main/run.py&quot;, line 3, in &lt;module&gt;</span><br><span class="line">    from roop import core</span><br><span class="line">  File &quot;安装目录/roop-main/roop/core.py&quot;, line 20, in &lt;module&gt;</span><br><span class="line">    import roop.ui as ui</span><br><span class="line">  File &quot;安装目录/roop-main/roop/ui.py&quot;, line 4, in &lt;module&gt;</span><br><span class="line">    import customtkinter as ctk</span><br><span class="line">  File &quot;安装目录/roop-main/.venv/lib/python3.10/site-packages/customtkinter/__init__.py&quot;, line 5, in &lt;module&gt;</span><br><span class="line">    from tkinter import Variable, StringVar, IntVar, DoubleVar, BooleanVar</span><br><span class="line">  File &quot;/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/tkinter/__init__.py&quot;, line 37, in &lt;module&gt;</span><br><span class="line">    import _tkinter # If this fails your Python may not be configured for Tk</span><br><span class="line">ModuleNotFoundError: No module named &#x27;_tkinter&#x27;</span><br></pre></td></tr></table></figure>
+		<h2 id="首先是一条非常重要的命令du。"><a href="#首先是一条非常重要的命令du。" class="headerlink" title="首先是一条非常重要的命令du。"></a>首先是一条非常重要的命令<code>du</code>。</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -sh ./* 2&gt;/dev/null | sort -h </span><br></pre></td></tr></table></figure>
 
+<p>众所周知，原生的Mac OS无法很快的列出每个文件夹的大小，而这个<code>du</code>命令可以将当前选中的文件夹里可以读取的文件&#x2F;文件夹按照从小到大的顺序列出，并给出具体大小。也就是说，当你想要清除大文件时，可以从下向上逐个考虑清理，而不是挨个点开get info查询大小。</p>
+<h2 id="很多大文件是隐藏的或者在隐藏文件夹里的"><a href="#很多大文件是隐藏的或者在隐藏文件夹里的" class="headerlink" title="很多大文件是隐藏的或者在隐藏文件夹里的"></a>很多大文件是隐藏的或者在隐藏文件夹里的</h2><p>我们可以使用<code>Command+Shift+.</code>这个快捷键显示隐藏文件。</p>
+<h2 id="以下是几个大概率藏有超大数据的文件夹"><a href="#以下是几个大概率藏有超大数据的文件夹" class="headerlink" title="以下是几个大概率藏有超大数据的文件夹"></a>以下是几个大概率藏有超大数据的文件夹</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">~/Downloads</span><br><span class="line">~/Documents</span><br><span class="line">~/Desktop</span><br><span class="line">~/Library</span><br><span class="line">~/Library/Application Support</span><br><span class="line">~/Library/Containers</span><br></pre></td></tr></table></figure>
 
-<p>解决办法：</p>
-<p>命令行运行<code>brew install python-tk@3.10  </code></p>
+<blockquote>
+<p>如何清理Mac中占用大量空间的系统数据和应用？ © 2025 by Ruotian is licensed under CC BY-NC-SA 4.0 </p>
+</blockquote>
 
 	</div>
 
@@ -697,7 +685,7 @@
 				<span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
 			</button>
 		</a>
-		<a target="_blank" class="no-pjax icon-telegram" href="https://telegram.me/share/url?url=https://y-r-t.github.io/2025/01/03/cm5gg4cdq0006r0076y5i3k3f/&text=关于开源换脸程序roop的一些安装问题和可能的解决办法" tooltip="分享到 Telegram">
+		<a target="_blank" class="no-pjax icon-telegram" href="https://telegram.me/share/url?url=https://y-r-t.github.io/2025/01/05/cm5jpm9v4000hqj07fy990kvp/&text=如何清理Mac中占用大量空间的系统数据和应用？" tooltip="分享到 Telegram">
 			<button class="btn btn-icon btn-primary" style="background: #42a5f5;border: none;">
 				<span class="btn-inner--icon"><i class="fa fa-telegram"></i></span>
 			</button>
@@ -714,12 +702,11 @@
 </div>
 <script type="text/javascript">
 	socialShare("#share", {
-	    title : '关于开源换脸程序roop的一些安装问题和可能的解决办法',
-	    description : `此为本文所指的roop。
-本文所用设备为M芯片Mac，可能对于intelMac&amp;#x2F;Windo...`,
+	    title : '如何清理Mac中占用大量空间的系统数据和应用？',
+	    description : `首先是一条非常重要的命令du。1du -sh ./* 2&amp;gt;/dev/null | sort -...`,
 	    wechatQrcodeTitle : "分享到微信",
 	    wechatQrcodeHelper : '微信扫描二维码',
-	    source : 'https://y-r-t.github.io/2025/01/03/cm5gg4cdq0006r0076y5i3k3f/'
+	    source : 'https://y-r-t.github.io/2025/01/05/cm5jpm9v4000hqj07fy990kvp/'
 	});
 	$("#share_show")[0].onclick = function(){
 		$("#share_container").addClass("opened");
@@ -785,7 +772,7 @@
 
 
 
-<div class="post-navigation card shadow-sm"><div class="post-navigation-item post-navigation-pre"><span class="page-navigation-extra-text"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>上一篇</span><a href="/2025/01/05/cm5jpk75300007107dxechg12/" rel="prev"> 如何清理Mac中占用大量空间的系统数据和应用？</a></div><div class="post-navigation-item post-navigation-next"><span class="page-navigation-extra-text">下一篇 <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span><a href="/2024/12/26/cm5gg4cdq000ar0073qw84s17/" rel="next"> 呃呃呃是不是好久没更新了</a></div></div>
+<div class="post-navigation card shadow-sm"><div class="post-navigation-item post-navigation-pre"></div><div class="post-navigation-item post-navigation-next"><span class="page-navigation-extra-text">下一篇 <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span><a href="/2025/01/03/cm5jpm9v20006qj07hzgmagxf/" rel="next"> 关于开源换脸程序roop的一些安装问题和可能的解决办法</a></div></div>
 
 
 
