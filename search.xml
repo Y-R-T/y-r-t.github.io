@@ -5,10 +5,10 @@
     
     <entry>
       <title>一次黑入学校北楼电视的神奇记录（雾）</title>
-      <link href="/2025/04/05/cm949ift40000at07ae8t3y6a/"/>
-      <url>/2025/04/05/cm949ift40000at07ae8t3y6a/</url>
+      <link href="/2025/04/05/%E4%B8%80%E6%AC%A1%E9%BB%91%E5%85%A5%E5%AD%A6%E6%A0%A1%E5%8C%97%E6%A5%BC%E7%94%B5%E8%A7%86%E7%9A%84%E7%A5%9E%E5%A5%87%E8%AE%B0%E5%BD%95%EF%BC%88%E9%9B%BE%EF%BC%89/"/>
+      <url>/2025/04/05/%E4%B8%80%E6%AC%A1%E9%BB%91%E5%85%A5%E5%AD%A6%E6%A0%A1%E5%8C%97%E6%A5%BC%E7%94%B5%E8%A7%86%E7%9A%84%E7%A5%9E%E5%A5%87%E8%AE%B0%E5%BD%95%EF%BC%88%E9%9B%BE%EF%BC%89/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>还没写, 等等啊…</p></blockquote><blockquote><p>一次黑入学校北楼电视的神奇记录（雾） © 2025 by Ruotian is licensed under CC BY-NC-SA 4.0</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>还在写, 等等啊…</p></blockquote><h1 id="0"><a href="#0" class="headerlink" title="0"></a>0</h1><p>这件事源自我的一个同学, 有一天他得知了学校SEEWO系统如何解除锁定触摸, 然后我们就琢磨着能干点啥, 所以就做了如下操作了. (笑)</p><h1 id="第一步-Sunshine串流"><a href="#第一步-Sunshine串流" class="headerlink" title="第一步: Sunshine串流"></a>第一步: Sunshine串流</h1><blockquote><p>一次黑入学校北楼电视的神奇记录（雾） © 2025 by Ruotian is licensed under CC BY-NC-SA 4.0</p></blockquote>]]></content>
       
       
       
@@ -18,8 +18,8 @@
     
     <entry>
       <title>“机械生命”的可能性：一次持续化智能体的构想笔记</title>
-      <link href="/2025/04/05/cm948m6gc0000cl07g181cr9f/"/>
-      <url>/2025/04/05/cm948m6gc0000cl07g181cr9f/</url>
+      <link href="/2025/04/05/%E2%80%9C%E6%9C%BA%E6%A2%B0%E7%94%9F%E5%91%BD%E2%80%9D%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7%EF%BC%9A%E4%B8%80%E6%AC%A1%E6%8C%81%E7%BB%AD%E5%8C%96%E6%99%BA%E8%83%BD%E4%BD%93%E7%9A%84%E6%9E%84%E6%83%B3%E7%AC%94%E8%AE%B0/"/>
+      <url>/2025/04/05/%E2%80%9C%E6%9C%BA%E6%A2%B0%E7%94%9F%E5%91%BD%E2%80%9D%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7%EF%BC%9A%E4%B8%80%E6%AC%A1%E6%8C%81%E7%BB%AD%E5%8C%96%E6%99%BA%E8%83%BD%E4%BD%93%E7%9A%84%E6%9E%84%E6%83%B3%E7%AC%94%E8%AE%B0/</url>
       
         <content type="html"><![CDATA[<blockquote><p>经过AI文字修改的上一条内容, 果然AI还是能薄纱我 :(</p></blockquote><blockquote><p><strong>草稿说明：</strong><br>以下内容为本人初步构想，旨在探索基于大型语言模型 (LLM) 的“持续化智能体”（或称“机械生命”）的基本架构与实现路径。文中部分概念仍处于探索阶段，欢迎讨论和改进。(可以在我刚修好的giscus里面说)  </p><p>“机械生命”的可能性：一次持续化智能体的构想笔记 © 2025 by Ruotian is licensed under CC BY-NC-SA 4.0</p></blockquote><hr><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>在2024年中旬，我开始思考如何构建一种基于LLM、能够持续运作且不断进化的智能体，类似于“机械生命”。这种智能体不仅仅是静态的实体或单纯依赖预设程序执行任务的工具，而是具备类似生物般的智能、创新和自我进化能力。</p><p>近期，我关注到诸如 Langchain、MCP 等框架的发展，这些技术为实现我的设想提供了较为坚实的基础（或许已有相关实现，亦或早在某处得以验证）。因此，在没有发现完全实现该构想之前，我决定先行记录并整理这一思路。</p><h2 id="当前的-AI-Agent-现状"><a href="#当前的-AI-Agent-现状" class="headerlink" title="当前的 AI Agent 现状"></a>当前的 AI Agent 现状</h2><p>目前较为流行的 AI Agent（如 Manus）主要由经过训练的基础LLM和外部工具链（例如网页搜索、计算器、API调用等）组成。这类系统虽然能够自主调用外部工具解决任务，但在“机械生命”概念中，我们关注的不仅是工具调用，而在于如何构建具备“记忆”与“持续化运行”能力的智能体。</p><h2 id="持续化运行与记忆机制"><a href="#持续化运行与记忆机制" class="headerlink" title="持续化运行与记忆机制"></a>持续化运行与记忆机制</h2><h3 id="持续化运行"><a href="#持续化运行" class="headerlink" title="持续化运行"></a>持续化运行</h3><p>对于生物而言，持续性存在并非指不停地活动，而是指在拥有足够能源支持下的长期稳定运行。对“机械生命”而言，持续化意味着智能体能够在不断运行中自主获取和管理能量，不受传统“开关机”机制的限制。</p><h3 id="记忆机制"><a href="#记忆机制" class="headerlink" title="记忆机制"></a>记忆机制</h3><p>记忆是任何高级生物的重要特征，帮助个体积累经验、提升能力。现有AI系统通常依赖内置或外部的记忆模块（如RNN、LSTM或基于 prompt 的短期记忆），而我设想的机械生命需要具备更高级的记忆能力，包括：</p><ul><li><strong>自我探索规律</strong>：能够从数据中挖掘模式与关联。  </li><li><strong>动态控制存储</strong>：根据重要性自动管理记忆存储，支持选择性强化或遗忘。(由智能体判断, 也可在设计时参考LSTM的忘记门&#x2F;输入门或者相关策略)  </li><li><strong>知识提炼与更新</strong>：通过持续学习，将重复出现或理论支撑的信息提炼为系统化知识，存入专门的知识库。</li></ul><h2 id="具体构想示例"><a href="#具体构想示例" class="headerlink" title="具体构想示例"></a>具体构想示例</h2><p>以下为一种初步设计方案：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 单次记忆记录示例，记录内容包括传感器输入、思考过程或错误反馈</span></span><br><span class="line"><span class="attr">id:</span> <span class="string">UUID</span>   <span class="comment"># 含有时间戳的唯一标识</span></span><br><span class="line"><span class="attr">level:</span> <span class="string">Int</span>   <span class="comment"># 记忆重要性，默认会随时间自动降级，特殊记忆可设为-1保持长期存储</span></span><br><span class="line"><span class="attr">category:</span> <span class="string">String</span>   <span class="comment"># 记忆分类，如知识、短期记忆、计划等</span></span><br><span class="line"><span class="attr">content:</span></span><br><span class="line">  <span class="attr">Text:</span> <span class="string">String</span>     <span class="comment"># 文本信息</span></span><br><span class="line">  <span class="attr">Image:</span> <span class="string">Path</span>      <span class="comment"># 图像数据路径</span></span><br><span class="line">  <span class="comment"># 其他类型待扩展...</span></span><br></pre></td></tr></table></figure><p>程序伪代码示例：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    <span class="comment">// 读取最新传感器数据及前次操作错误记录，存入记忆库</span></span><br><span class="line">    更新记忆记录();</span><br><span class="line">    <span class="comment">// 基于当前记忆及外部数据生成下一步操作指令（遵循MCP或相关协议）</span></span><br><span class="line">    command = 模型生成下一时刻命令();</span><br><span class="line">    <span class="comment">// 执行硬件操作并捕获可能的错误</span></span><br><span class="line">    执行操作(command);</span><br><span class="line">    <span class="comment">// 对错误信息进行记录与反馈</span></span><br><span class="line">    更新错误记录();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>在该设计中，系统将维持一个记忆列表，负责存储、管理和更新所有记忆记录。系统需要智能化地对记忆进行增删改查，以避免超出模型的上下文长度，必要时可构建独立的知识库来存储长期知识。</p><h2 id="实现路径"><a href="#实现路径" class="headerlink" title="实现路径"></a>实现路径</h2><h3 id="1-前期微调"><a href="#1-前期微调" class="headerlink" title="1. 前期微调"></a>1. 前期微调</h3><p>通过针对 MCP 协议及特定环境任务的微调，将所需的记忆管理和工具调用能力嵌入基础模型中。</p><h3 id="2-预设记忆"><a href="#2-预设记忆" class="headerlink" title="2. 预设记忆"></a>2. 预设记忆</h3><p>在系统启动阶段，通过预先加载高优先级记忆（如充电站位置、关键知识等），为智能体提供初步生存所需的信息基础。</p><h3 id="3-自我学习与记忆更新"><a href="#3-自我学习与记忆更新" class="headerlink" title="3. 自我学习与记忆更新"></a>3. 自我学习与记忆更新</h3><p>这是构想中最关键的一环。智能体应通过不断在记忆列表与知识库中挖掘数据规律，从而不断修正和优化自身知识体系。举例来说：</p><ul><li><strong>场景示例：</strong><br>假设智能体配备有位置、摄像头和温度传感器模块。当智能体多次检测到在阴影区域内温度下降，并记录了相关位置和光照数据后，它可以形成如下猜想：<br>“在光照较弱的区域可能会导致温度下降。”<br>经过多次验证，这一猜想可以上升为知识型记忆，并用于指导后续决策（例如在需要降温时导航到相对较暗的区域）。</li></ul><p>在这一过程中，智能体还应考虑动态调整知识库：例如记录环境中的暗光区域、更新图像识别模式，并对可能影响温度变化的其他因素进行探测和整合，从而实现更高层次的智能化行为。</p><h2 id="挑战、局限性与解决方案-这段是新加的-也拿AI改了"><a href="#挑战、局限性与解决方案-这段是新加的-也拿AI改了" class="headerlink" title="挑战、局限性与解决方案 (这段是新加的, 也拿AI改了)"></a>挑战、局限性与解决方案 (这段是新加的, 也拿AI改了)</h2><p>尽管上述构想充满前瞻性和创新性，但在实际实现过程中不可避免地面临以下挑战：</p><ol><li><p><strong>硬件鲁棒性</strong><br>如果硬件出现故障或损坏，如何确保系统能够迅速恢复并保持稳定运行？</p></li><li><p><strong>持续供能</strong><br>当能量供应不足或中断时，如何保证系统的持续运行，甚至实现自我保护机制？</p></li><li><p><strong>伦理问题</strong><br>随着智能体能力的提升，可能会有人质疑其潜在风险（例如伤害人类等问题）。是否需要引入类似“机器人三定律”的伦理约束来平衡风险？</p></li><li><p><strong>实际可行性</strong><br>这种系统是否真的能在短时间内学会复杂逻辑并实现自我进化？如何应对高难度任务和复杂环境？</p></li></ol><h3 id="群体与机械力量的优势"><a href="#群体与机械力量的优势" class="headerlink" title="群体与机械力量的优势"></a>群体与机械力量的优势</h3><p>针对第四个问题：“这种系统真的能够学会真正的知识吗？”——答案在于充分利用群体和机械的力量来弥补单个智能体的局限性：</p><ul><li><p><strong>群体力量</strong><br>大规模智能体群体提供了海量样本与多样化的经验，能显著提高发现和验证规律的概率。正如许多天才发明往往需要契机，足够数量的智能体将大大增加偶然捕捉到有效规律的可能性。</p></li><li><p><strong>机械协作与共享</strong><br>机械系统具有超越人类的信息共享和协作能力。通过构建共享记忆和统一数据库，各智能体可以快速传递和整合知识，远超传统的人类知识传播速度。这种协作模式类似于“脑-机接口”的概念。此外，引入遗传算法和随机演化机制，在初始化阶段加入随机扰动，可以为系统注入多样性，类似于强化学习中的探索机制，但奖励标准由群体智能的综合判断动态调整（也可以结合人类设计的算法或自定义筛选机制）。</p></li></ul><p>综上所述，通过整合群体智慧与机械协作，我们有望克服个体学习与逻辑处理的局限性，为“机械生命”系统的持续进化提供坚实支持。</p><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>以上构想虽仍较为初步和粗糙，但旨在为“机械生命”这一概念提供一个可行的技术框架。通过前期微调、预设记忆和持续自我学习，未来或许能够实现一种真正意义上具备自我进化能力的智能体。</p><p><em>（备注：此构想源于对未来AI Agent发展的探索，本文为一名高中生在备考期间撰写的思考记录，未来将继续完善并尝试实现。）</em></p>]]></content>
       
@@ -31,8 +31,8 @@
     
     <entry>
       <title>持续化AI Agent的一些想法--“机械生命”</title>
-      <link href="/2025/03/23/cm94893jb0000qg078kdjgzga/"/>
-      <url>/2025/03/23/cm94893jb0000qg078kdjgzga/</url>
+      <link href="/2025/03/23/%E6%8C%81%E7%BB%AD%E5%8C%96AI-Agent%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/"/>
+      <url>/2025/03/23/%E6%8C%81%E7%BB%AD%E5%8C%96AI-Agent%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/</url>
       
         <content type="html"><![CDATA[<blockquote><p>这是我的草稿, 还有很多要改的地方, 但大概或许应该能让某些人看懂了吧? (至少能当个什么AI笑话?(雾))</p></blockquote><p>最初开始想这些事是在2024年中旬的时候, 当时在想能不能搞出一种基于LLM的可以持续存在的智能体, 或者换个词–“机械生命”, 这里的“持续存在”不仅仅指像物体一样静止地存在或是像扫地机器人那样仅通过预设程序中的一些指令行动的智能体, 而是那种更像人类或是生物那样可以以一种智能、创新和持续进化的模式存在智能体. 当时就有点想把我想象的东西写出来, 不过因为有<strong>点</strong>懒所以拖到了现在. :(</p><p>前一两个月, 我了解到 langchain, MCP 等这样的东西, 越发感觉我的构想已经有了实现的大部分基础(maybe 已经被人实现了(), 或者是在很早之前就被实现了也不一定), 所以趁现在我还没发现有人做出来的时候先把它写出来.</p><p>回顾一下最近比较火的manus, 即所谓AI Agent, 本质上就是一个训练后的基座LLM+工具链(toolchain, 如网页搜索、计算器、api…). 这个可以称得上是一个“机械生命”吗? 并非, 但已经有了一个雏形. Manus已经学会了自己调用外界的工具了, 解决了半年前我设想中“机械生命”中所想到的外部接口处理的问题.</p><p>所以, 现在我们如何才能实现真正的“机械生命”? 或者说, 其中“生命”那一部分?</p><p>记忆, 和持续化.</p><p>先说持续化, 对于我们人类而言, 我们有像LLM, 或者更广义的机器来说, 的等待用户激活或者开关机的行为吗? 没有, 即使是睡觉也只是人体以一种较为静止的模式生存的方式. 这里需要澄清一下概念, 对于“机械生命”的持续化, 指的是将生物生死二元化之后的生的一面, 换句话说, 就是长期连续的运行状态. 即在有足够能源下持续运行并能获取能源的东西.</p><p>更重要的一点是记忆, 或者说基于思维的记忆. 作为任何稍微高等的动物来说, 都有存储记忆的功能, 这是一种在生存中积累知识和能力的重要功能. 目前, 很多ai模型都有内置的或者外置的记忆系统, 比如RNN和LSTM等本身的设计核心就在记忆上, 以及ChatGPT在系统和prompt上的记忆等. 但我所设想的“机械生命”所具有的记忆模式有所不同. 他可以自我探索规律, 并且可以实现智能动态控制存储大小, 选择性强调和遗忘记忆, 从记忆中寻找规律. (或许可以通过语言模型实现)</p><p>现在介绍我的一个不完善的一个具体构想: </p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">//</span> <span class="string">单次记忆,</span> <span class="string">可为</span> <span class="string">传感器输入/思考内容/错误记录等</span></span><br><span class="line"></span><br><span class="line"><span class="string">//</span> <span class="string">uuid包含时间戳</span></span><br><span class="line"><span class="attr">id:</span> <span class="string">UUID</span> </span><br><span class="line"><span class="string">//</span> <span class="string">重要性值,</span> <span class="string">若无其他调整会随时间流逝被AI智能降级或最终删除,</span> <span class="string">或在开发时设置为-1作为固定记忆</span></span><br><span class="line"><span class="attr">level:</span> <span class="string">Int</span></span><br><span class="line"><span class="string">//</span> <span class="string">分类,</span> <span class="string">可用于更准确识别记忆类型,</span> <span class="string">如</span> <span class="string">知识/短期记忆内容/计划</span></span><br><span class="line"><span class="attr">category:</span> <span class="string">String</span></span><br><span class="line"><span class="string">//</span> <span class="string">记忆正文</span></span><br><span class="line"><span class="attr">content:</span> </span><br><span class="line">    <span class="string">//</span> <span class="string">文字</span></span><br><span class="line">    <span class="attr">Text:</span> <span class="string">String</span></span><br><span class="line">    <span class="string">//</span> <span class="string">图像</span></span><br><span class="line">    <span class="attr">Image:</span> <span class="string">Path</span></span><br><span class="line">    <span class="string">//</span> <span class="string">待补充...</span></span><br><span class="line"><span class="string">//待补充...</span></span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">while (1) &#123;</span><br><span class="line">    读取和上一步错误记录和传感器, 存入最新记忆</span><br><span class="line">    调用模型生成下一时刻命令, 包括对外操作和记忆操作 (遵循MCP或相关协议) </span><br><span class="line">    使硬件执行操作, 收集可能产生的错误指令 (为具体协议可操作的工具链)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>在这里面, 记忆结构文件会创造一个列表, 存储所有记忆, 而AI会持续维护记忆列表, 进行智能增删改查, 并控制长度 (避免超过自身上下文长度), 或者单独创建知识库.</p><p>在这样一个结构中, “机械生命”怎么做到自己持续运转呢? </p><p>答: 通过前期微调+预设记忆+自我学习</p><p>在前期微调中, 我们可以先把MCP协议使用方法和其他特化环境中一般需要的能力通过微调使其记忆在模型中</p><p>在预设记忆中, 我们可以将一些具体信息以高等级记忆写入记忆文件, 或者以知识库形式, 如初始充电桩或者一些具体知识, 就像现在的已经实现的知识库一样</p><p>最重要的部分便是自我学习, 这一部分也是这个构想中<strong>最重要</strong>的一点. 通过在记忆列表和知识库中寻找规律, 可以将有规律的部分或有理论基础的部分进行延伸形成规律, 存储进知识型记忆(category)或者更新知识库. 这么说可能有些玄乎, 我在这里举一个例子.</p><p>例子:</p><p>我现在的智能体上有 位置传感器模块, 摄像模块, 和温度模块.</p><p>在无现有知识的的情况下, 多次进入阴影区域, 记忆记录里多个记录对应了 位置+光照+温度 的对应关系, 在读取这些关系后, 该智能体将这种关系 (在光线弱的地方可能导致温度下降) 作为猜想记录进记忆列表和知识库中的猜想中.</p><p>再经过多次验证后可将其计入知识型记忆中, 或者加入自学习知识库. 这样一来, 他就可以在需要降温的时候导航至记忆中温度低的地方, 或者寻找周围环境光中的较暗位置.</p><p>在这个例子中, 其实还有更多的内容, 比如说收集暗光区域列表, 更新图像识别特定规律, 还有进一步探索可能促使改规律失效的问题, 后期修改自身知识库或者总结更高层面的降温原理.</p><p>以上, 就是我所设想中的一个“机械生命”的初步的、粗浅的例子, 虽然这个“机械生命”看起来呆呆的, 有好像不像所谓“人的思考”一样真实, 但是, whatever, 这其中或许蕴含着一些可能性, 一些我所期望的可能性吧.</p><p>一个高二学生痛苦托福备考中瞎写的文字</p><p>p.s.: 没准儿等我申请完可以尝试把它搞出来.</p><p>p.s.: 不是我一个申请数学专业的搞这干什么 (喂! 不是?)</p><p>p.s.: 待会儿可能拿 DS 或者 GPT 改一下 ()</p><blockquote><p>持续化AI Agent的一些想法 © 2025 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -44,8 +44,8 @@
     
     <entry>
       <title>搞点新东西</title>
-      <link href="/2025/01/06/cm5jtt93z0000j1074uvn3wj4/"/>
-      <url>/2025/01/06/cm5jtt93z0000j1074uvn3wj4/</url>
+      <link href="/2025/01/06/%E6%83%B3%E6%90%9E%E7%82%B9%E6%96%B0%E4%B8%9C%E8%A5%BF/"/>
+      <url>/2025/01/06/%E6%83%B3%E6%90%9E%E7%82%B9%E6%96%B0%E4%B8%9C%E8%A5%BF/</url>
       
         <content type="html"><![CDATA[<p>刚才修复了一下giscus评论系统，理论上能用。如果你路过这个页面，可以随便写点什么，应该支持markdown。</p><p>ee好像有点问题，但是刷新页面就可以了（疑惑🤔</p>]]></content>
       
@@ -57,8 +57,8 @@
     
     <entry>
       <title>如何清理Mac中占用大量空间的系统数据和应用？</title>
-      <link href="/2025/01/05/cm5jpm9v4000hqj07fy990kvp/"/>
-      <url>/2025/01/05/cm5jpm9v4000hqj07fy990kvp/</url>
+      <link href="/2025/01/05/%E5%A6%82%E4%BD%95%E6%B8%85%E7%90%86Mac%E4%B8%AD%E5%8D%A0%E7%94%A8%E5%A4%A7%E9%87%8F%E7%A9%BA%E9%97%B4%E7%9A%84%E7%B3%BB%E7%BB%9F%E6%95%B0%E6%8D%AE%E5%92%8C%E5%BA%94%E7%94%A8%EF%BC%9F/"/>
+      <url>/2025/01/05/%E5%A6%82%E4%BD%95%E6%B8%85%E7%90%86Mac%E4%B8%AD%E5%8D%A0%E7%94%A8%E5%A4%A7%E9%87%8F%E7%A9%BA%E9%97%B4%E7%9A%84%E7%B3%BB%E7%BB%9F%E6%95%B0%E6%8D%AE%E5%92%8C%E5%BA%94%E7%94%A8%EF%BC%9F/</url>
       
         <content type="html"><![CDATA[<h2 id="首先是一条非常重要的命令du。"><a href="#首先是一条非常重要的命令du。" class="headerlink" title="首先是一条非常重要的命令du。"></a>首先是一条非常重要的命令<code>du</code>。</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -sh ./* 2&gt;/dev/null | sort -h </span><br></pre></td></tr></table></figure><p>众所周知，原生的Mac OS无法很快的列出每个文件夹的大小，而这个<code>du</code>命令可以将当前选中的文件夹里可以读取的文件&#x2F;文件夹按照从小到大的顺序列出，并给出具体大小。也就是说，当你想要清除大文件时，可以从下向上逐个考虑清理，而不是挨个点开get info查询大小。</p><h2 id="很多大文件是隐藏的或者在隐藏文件夹里的"><a href="#很多大文件是隐藏的或者在隐藏文件夹里的" class="headerlink" title="很多大文件是隐藏的或者在隐藏文件夹里的"></a>很多大文件是隐藏的或者在隐藏文件夹里的</h2><p>我们可以使用<code>Command+Shift+.</code>这个快捷键显示隐藏文件。</p><h2 id="以下是几个大概率藏有超大数据的文件夹"><a href="#以下是几个大概率藏有超大数据的文件夹" class="headerlink" title="以下是几个大概率藏有超大数据的文件夹"></a>以下是几个大概率藏有超大数据的文件夹</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">~/Downloads</span><br><span class="line">~/Documents</span><br><span class="line">~/Desktop</span><br><span class="line">~/Library</span><br><span class="line">~/Library/Application Support</span><br><span class="line">~/Library/Containers</span><br></pre></td></tr></table></figure><blockquote><p>如何清理Mac中占用大量空间的系统数据和应用？ © 2025 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -70,8 +70,8 @@
     
     <entry>
       <title>关于开源换脸程序roop的一些安装问题和可能的解决办法</title>
-      <link href="/2025/01/03/cm5jpm9v20006qj07hzgmagxf/"/>
-      <url>/2025/01/03/cm5jpm9v20006qj07hzgmagxf/</url>
+      <link href="/2025/01/03/%E5%85%B3%E4%BA%8E%E5%BC%80%E6%BA%90%E6%8D%A2%E8%84%B8%E7%A8%8B%E5%BA%8Froop%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98%E5%92%8C%E5%8F%AF%E8%83%BD%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+      <url>/2025/01/03/%E5%85%B3%E4%BA%8E%E5%BC%80%E6%BA%90%E6%8D%A2%E8%84%B8%E7%A8%8B%E5%BA%8Froop%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98%E5%92%8C%E5%8F%AF%E8%83%BD%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
       
         <content type="html"><![CDATA[<p>此为本文所指的<a href="https://github.com/s0md3v/roop">roop</a>。</p><p>本文所用设备为M芯片Mac，可能对于intelMac&#x2F;Window&#x2F;Linux等系统不生效。</p><p>软件操作针对vscode，其他软件请自行考虑使用。</p><h2 id="在一切之前"><a href="#在一切之前" class="headerlink" title="在一切之前"></a>在一切之前</h2><p>请首先阅读<a href="https://github.com/s0md3v/roop/wiki/1.-Installation">原安装指南</a>（可能需要科学上网手段）</p><h2 id="1-python程序环境安装不上"><a href="#1-python程序环境安装不上" class="headerlink" title="1.python程序环境安装不上"></a>1.python程序环境安装不上</h2><p>解决办法：尝试使用venv：</p><ol><li>安装python3.10</li><li>打开vscode</li><li>在一个<code>.py</code>程序下点击右下角的版本号</li><li>点击<code>Create Virtual Environment</code></li><li>点击<code>.venv</code></li><li>点击<code>3.10</code>开头的版本</li><li>点击<code>requirement.txt</code></li><li>等待很长一段时间下载</li></ol><h2 id="2-python不断报错tk安装问题"><a href="#2-python不断报错tk安装问题" class="headerlink" title="2.python不断报错tk安装问题"></a>2.python不断报错tk安装问题</h2><p>如：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;安装目录/roop-main/run.py&quot;, line 3, in &lt;module&gt;</span><br><span class="line">    from roop import core</span><br><span class="line">  File &quot;安装目录/roop-main/roop/core.py&quot;, line 20, in &lt;module&gt;</span><br><span class="line">    import roop.ui as ui</span><br><span class="line">  File &quot;安装目录/roop-main/roop/ui.py&quot;, line 4, in &lt;module&gt;</span><br><span class="line">    import customtkinter as ctk</span><br><span class="line">  File &quot;安装目录/roop-main/.venv/lib/python3.10/site-packages/customtkinter/__init__.py&quot;, line 5, in &lt;module&gt;</span><br><span class="line">    from tkinter import Variable, StringVar, IntVar, DoubleVar, BooleanVar</span><br><span class="line">  File &quot;/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/tkinter/__init__.py&quot;, line 37, in &lt;module&gt;</span><br><span class="line">    import _tkinter # If this fails your Python may not be configured for Tk</span><br><span class="line">ModuleNotFoundError: No module named &#x27;_tkinter&#x27;</span><br></pre></td></tr></table></figure><p>解决办法：</p><p>命令行运行<code>brew install python-tk@3.10  </code></p>]]></content>
       
@@ -83,8 +83,8 @@
     
     <entry>
       <title>呃呃呃是不是好久没更新了</title>
-      <link href="/2024/12/26/cm5jpm9v3000aqj073q1lbofp/"/>
-      <url>/2024/12/26/cm5jpm9v3000aqj073q1lbofp/</url>
+      <link href="/2024/12/26/%E5%91%83%E5%91%83%E5%91%83%E6%98%AF%E4%B8%8D%E6%98%AF%E5%A5%BD%E4%B9%85%E6%B2%A1%E6%9B%B4%E6%96%B0%E4%BA%86/"/>
+      <url>/2024/12/26/%E5%91%83%E5%91%83%E5%91%83%E6%98%AF%E4%B8%8D%E6%98%AF%E5%A5%BD%E4%B9%85%E6%B2%A1%E6%9B%B4%E6%96%B0%E4%BA%86/</url>
       
         <content type="html"><![CDATA[<p>最近想写写（<br>等考完这次toefl就写点大的，填填坑或者写点技术或者数学或者哲学？idk，没想法。</p><p>哎不是，我discussion评论系统怎么爆了？？？</p>]]></content>
       
@@ -96,8 +96,8 @@
     
     <entry>
       <title>关于AI的一些思考</title>
-      <link href="/2024/06/24/cm5jpm9v20005qj075wuf3s7k/"/>
-      <url>/2024/06/24/cm5jpm9v20005qj075wuf3s7k/</url>
+      <link href="/2024/06/24/%E5%85%B3%E4%BA%8EAI%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/"/>
+      <url>/2024/06/24/%E5%85%B3%E4%BA%8EAI%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</url>
       
         <content type="html"><![CDATA[<h2 id="强人工智能可以实现吗？"><a href="#强人工智能可以实现吗？" class="headerlink" title="强人工智能可以实现吗？"></a>强人工智能可以实现吗？</h2><p>我的答案是可以。</p><p>强人工智能通常代指一种可以依照自身想法行动的机器人，现存绝大部分反对观点的理由是，计算机无法模拟出像人脑一样思考的模式。</p><p>但是……真的不可以吗？</p><p>对于这个问题，我们要明确所谓“像人脑一样的思考”。</p><p>人类的思考一般被认为是由大量神经元之间的电信号交流所自发涌现的一种现象，而也是这种神奇的现象被大部分人认作是无法在计算机上实现的。</p><p>但是这种现象未必不能在计算机上发生。</p><p>首先我们要去除对于“思考”是一种超脱物质的能力（非物质）的这种观点；或者换句话说，灵魂是不存在的；又或者说：唯物主义（materialism）。</p><p>这一点我不需要重复提及，具体过程很多人在历史上都提及过，如果感兴趣的话可以看看<a href="https://www.bilibili.com/video/BV1V3411k7Q1">Yale的Shelly Kagan教授的这个网课</a>的前半部分。</p><p>那么按照唯物主义的观点来讲</p><blockquote><p>正在施工中</p></blockquote><blockquote><p>关于AI的一些思考 © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -115,8 +115,8 @@
     
     <entry>
       <title>这几天搞的小东西</title>
-      <link href="/2024/05/29/cm5jpm9v4000iqj07468cdvqg/"/>
-      <url>/2024/05/29/cm5jpm9v4000iqj07468cdvqg/</url>
+      <link href="/2024/05/29/%E8%BF%99%E5%87%A0%E5%A4%A9%E6%90%9E%E7%9A%84%E5%B0%8F%E4%B8%9C%E8%A5%BF/"/>
+      <url>/2024/05/29/%E8%BF%99%E5%87%A0%E5%A4%A9%E6%90%9E%E7%9A%84%E5%B0%8F%E4%B8%9C%E8%A5%BF/</url>
       
         <content type="html"><![CDATA[<p><a href="https://y-r-t.github.io/static/bird/index.html">Bird Game</a> &#x2F;&#x2F; v0.1.0</p><p><a href="https://y-r-t.github.io/static/musicGame/index.html">Music Game</a> &#x2F;&#x2F; v0.4.0</p><p><a href="https://y-r-t.github.io/static/game/index.html">STG Game</a> &#x2F;&#x2F; 未完成</p><p><a href="https://y-r-t.github.io/static/3DGame/index.html">3D Game</a> &#x2F;&#x2F; 未完成</p><p><a href="https://y-r-t.github.io/static/get-mit-president/index.html">Get MITP</a> &#x2F;&#x2F; 改编</p><p><a href="https://y-r-t.github.io/static/editor/index.html">Editor</a> &#x2F;&#x2F; 可以统计和保存txt的小东西 v0.1.0</p><p><a href="https://y-r-t.github.io/static/predict/index.html">Predict</a> &#x2F;&#x2F; 未完成</p><p><a href="https://y-r-t.github.io/static/Simple-Timer/index.html">Timer</a> &#x2F;&#x2F; 极简 v0.1.0 </p><p><a href="https://y-r-t.github.io/static/textFormatting/index.html">Formatting</a> &#x2F;&#x2F; 自用， 调节双语字幕格式 v0.1.0</p><p><a href="https://y-r-t.github.io/static/show/index.html">Show</a> &#x2F;&#x2F; 显示键盘输入 v0.1.0</p><p><a href="https://y-r-t.github.io/static/Word-Counter/index.html">Counter</a> &#x2F;&#x2F; 极简低配counter v0.1.0</p><blockquote><p>这几天搞的小东西 © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -128,8 +128,8 @@
     
     <entry>
       <title>Music Game 更新记录</title>
-      <link href="/2024/05/29/cm5jpm9v00001qj07fi8o2qef/"/>
-      <url>/2024/05/29/cm5jpm9v00001qj07fi8o2qef/</url>
+      <link href="/2024/05/29/Music-Game-%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/"/>
+      <url>/2024/05/29/Music-Game-%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/</url>
       
         <content type="html"><![CDATA[<p>v0.1.0 2024-05-29 加入了ACC，优化布局，加入按键显示。 </p><p>v0.2.0 2024-05-30 用户可以自行选择谱面（随机生成，网站内部谱面，导入自己的（方法：将osz文件改为zip解压并找到对应难度的osu文件导入））</p><p>v0.3.0 2024-05-30 加入空格暂停键</p><p>点击这里<a href="https://y-r-t.github.io/static/musicGame">Music Game</a></p><blockquote><p>Music Game 更新记录 © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -147,8 +147,8 @@
     
     <entry>
       <title>Python中的if __name__ == &quot;__main__&quot;是什么意思？</title>
-      <link href="/2024/05/23/cm5jpm9v10002qj07a5t218un/"/>
-      <url>/2024/05/23/cm5jpm9v10002qj07a5t218un/</url>
+      <link href="/2024/05/23/Python%E4%B8%AD%E7%9A%84if%20__name__%20==%20%22__main__%22%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F/"/>
+      <url>/2024/05/23/Python%E4%B8%AD%E7%9A%84if%20__name__%20==%20%22__main__%22%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F/</url>
       
         <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def main():</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure><p>对于很多将 Python 作为第一个语言学习的新手，通常会对以上的<code>if __name__ == &quot;__main__&quot;</code>感到迷惑，那么它究竟是什么呢？</p><p>首先，我们要知道，在 Python 中运行<code> import &lt;module&gt;</code>的时候，实质上就是运行一次你所导入的模块（<code>&lt;module&gt;</code>）。</p><p>而<code>__name__</code>是一个 Python 的一个内置变量，当你的<code>.py</code>文件被直接运行时，该文件的<code>__name__</code>就会被赋值为<code>__main__</code>，所以当我们直接运行开头那个程序时，<code>if</code>内的语句<code>main()</code>就将可以执行。</p><p>但是，当我们使用<code>import</code>的方式导入这个文件的代码，情况便有所不同。当一个<code>.py</code>文件被<code>import</code>到你的主文件时，那个被引入的文件的<code>__name__</code>属性会被赋值为其文件名（仅保留<code>.py</code>前面的部分）。所以<code> if __name__ == &quot;__main__&quot;</code>检测时，程序发现<code>__name__</code>属性的值并不是<code>&quot;__main__&quot;</code>（而是文件名），导致检查返回了<code>false</code>，内部的语句也就不会被执行了。</p><blockquote><p>Python中的if <strong>name</strong> &#x3D;&#x3D; “<strong>main</strong>“是什么意思？ © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -166,8 +166,8 @@
     
     <entry>
       <title>Malody-4k-Regular-1dan过了lol！！！</title>
-      <link href="/2024/05/20/cm5jpm9uy0000qj071aendrzm/"/>
-      <url>/2024/05/20/cm5jpm9uy0000qj071aendrzm/</url>
+      <link href="/2024/05/20/Malody-4k-Regular-1dan%E8%BF%87%E4%BA%86lol%EF%BC%81%EF%BC%81%EF%BC%81/"/>
+      <url>/2024/05/20/Malody-4k-Regular-1dan%E8%BF%87%E4%BA%86lol%EF%BC%81%EF%BC%81%EF%BC%81/</url>
       
         <content type="html"><![CDATA[<p>好耶！！！！！<br><img src="https://y-r-t.github.io/img/000003.png" alt="dan1"></p><blockquote><p>Malody-4k-Regular-1dan过了lol！！！ © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -179,8 +179,8 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="/2024/05/20/cm5jpm9v20009qj07btj70625/"/>
-      <url>/2024/05/20/cm5jpm9v20009qj07btj70625/</url>
+      <link href="/2024/05/20/hello-world/"/>
+      <url>/2024/05/20/hello-world/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
@@ -192,8 +192,8 @@
     
     <entry>
       <title>如何在Github上获得静态网页？</title>
-      <link href="/2024/05/19/cm5jpm9v3000cqj07bempc93q/"/>
-      <url>/2024/05/19/cm5jpm9v3000cqj07bempc93q/</url>
+      <link href="/2024/05/19/%E5%A6%82%E4%BD%95%E5%9C%A8Github%E4%B8%8A%E8%8E%B7%E5%BE%97%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%EF%BC%9F/"/>
+      <url>/2024/05/19/%E5%A6%82%E4%BD%95%E5%9C%A8Github%E4%B8%8A%E8%8E%B7%E5%BE%97%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%EF%BC%9F/</url>
       
         <content type="html"><![CDATA[<p>准备：GitHub账号</p><ol><li><p>登陆你的 github 账号</p></li><li><p>点击左侧的 New，如图：<br><img src="https://y-r-t.github.io/img/000004.png" alt="new"> </p></li><li><p>在 Repository name 栏填写<code>&lt;你的用户名&gt;.github.io</code>，点击确认，如图：</p></li></ol><p><img src="https://y-r-t.github.io/img/000005.png" alt="创建"> </p><blockquote><p>如何在Github上获得静态网页？ © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -211,8 +211,8 @@
     
     <entry>
       <title>Mac如何用Hexo建一个blog？</title>
-      <link href="/2024/05/19/cm5jpm9v4000jqj07bcsg358o/"/>
-      <url>/2024/05/19/cm5jpm9v4000jqj07bcsg358o/</url>
+      <link href="/2024/05/19/%E5%A6%82%E4%BD%95%E7%94%A8Hexo%E5%BB%BA%E4%B8%80%E4%B8%AAblog%EF%BC%9F/"/>
+      <url>/2024/05/19/%E5%A6%82%E4%BD%95%E7%94%A8Hexo%E5%BB%BA%E4%B8%80%E4%B8%AAblog%EF%BC%9F/</url>
       
         <content type="html"><![CDATA[<p>准备：Mac电脑，github账号</p><h2 id="一、-配环境"><a href="#一、-配环境" class="headerlink" title="一、 配环境"></a>一、 配环境</h2><ol><li><a href="https://nodejs.org/">下载 Node.js</a></li><li>安装 homebrew</li></ol> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;</span><br></pre></td></tr></table></figure><h2 id="二、安装-Hexo"><a href="#二、安装-Hexo" class="headerlink" title="二、安装 Hexo"></a>二、安装 Hexo</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><h2 id="三、初始化"><a href="#三、初始化" class="headerlink" title="三、初始化"></a>三、初始化</h2><p>将 <code>&lt;folder&gt;</code> 替换为你想要作为网站本地目录的文件夹</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><h2 id="四、配置"><a href="#四、配置" class="headerlink" title="四、配置"></a>四、配置</h2><p>打开你刚才选择的 <code>&lt;folder&gt;</code> 中的 <code>_config.yml</code> 文件， 如图更改内容：</p><p><img src="https://y-r-t.github.io/img/000001.png" alt="网站设置"> </p><p><img src="https://y-r-t.github.io/img/000002.png" alt="网址设置"><br>其余内容解释请访问 <a href="https://hexo.io/zh-cn/docs/configuration">官方解释页面</a></p><h2 id="五、部署"><a href="#五、部署" class="headerlink" title="五、部署"></a>五、部署</h2><ol><li><p>建立一个名为 <code>&lt;你的 GitHub 用户名&gt;.github.io</code> 的公开仓库，教程在<a href="https://y-r-t.github.io/2024/05/19/clwdntev60001xicv7vj31zeo/">这里</a></p></li><li><p>打开刚才的 <code>_config.yml</code> 文件，编辑下列内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;刚才建立的仓库的完整url&gt; </span><br><span class="line">  branch: main</span><br><span class="line">  message: Site updated:&#123;&#123; now(&#x27;YYYY-MM-DD HH:mm:ss&#x27;) &#125;&#125;</span><br></pre></td></tr></table></figure></li><li><p>发布</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure></li></ol><h2 id="六、后续更新blog"><a href="#六、后续更新blog" class="headerlink" title="六、后续更新blog"></a>六、后续更新blog</h2><ul><li>清除生成内容 <code>hexo clean</code></li><li>生成内容 <code>hexo generate</code></li><li>上传内容 <code>hexo deploy</code></li></ul><blockquote><p>Mac如何用Hexo建一个blog？ © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 </p></blockquote>]]></content>
       
@@ -230,8 +230,8 @@
     
     <entry>
       <title>Test</title>
-      <link href="/2024/05/19/cm5jpm9v20004qj077uik4nzs/"/>
-      <url>/2024/05/19/cm5jpm9v20004qj077uik4nzs/</url>
+      <link href="/2024/05/19/Test/"/>
+      <url>/2024/05/19/Test/</url>
       
         <content type="html"><![CDATA[<h2 id="This-is-a-test"><a href="#This-is-a-test" class="headerlink" title="This is a test"></a>This is a test</h2><p><a href="https://osu.ppy.sh/users/24348003"><img src="https://osu-sig.vercel.app/card?user=ruotian&mode=mania&animation=true" alt="My SVG Image"></a></p><p><em>hey</em></p><blockquote><p>Test © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0</p></blockquote>]]></content>
       

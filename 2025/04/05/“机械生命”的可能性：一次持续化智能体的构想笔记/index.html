@@ -3,16 +3,20 @@
 <html class="article-header-style-default">
 <head>
 	
-	<title>归档 : 2024/5 - Ruotian&#39;s Blog</title>
+	<title>“机械生命”的可能性：一次持续化智能体的构想笔记 - Ruotian&#39;s Blog</title>
 	<meta charset="utf-8">
 	
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	
-	<meta property="og:type" content="website">
-<meta property="og:title" content="Ruotian&#39;s Blog">
-<meta property="og:url" content="https://y-r-t.github.io/archives/2024/05/index.html">
+	<meta name="description" content="经过AI文字修改的上一条内容, 果然AI还是能薄纱我 :(   草稿说明：以下内容为本人初步构想，旨在探索基于大型语言模型 (LLM) 的“持续化智能体”（或称“机械生命”）的基本架构与实现路径。文中部分概念仍处于探索阶段，欢迎讨论和改进。(可以在我刚修好的giscus里面说)   “机械生命”的可能性：一次持续化智能体的构想笔记 © 2025 by Ruotian is licensed un">
+<meta property="og:type" content="article">
+<meta property="og:title" content="“机械生命”的可能性：一次持续化智能体的构想笔记">
+<meta property="og:url" content="https://y-r-t.github.io/2025/04/05/%E2%80%9C%E6%9C%BA%E6%A2%B0%E7%94%9F%E5%91%BD%E2%80%9D%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7%EF%BC%9A%E4%B8%80%E6%AC%A1%E6%8C%81%E7%BB%AD%E5%8C%96%E6%99%BA%E8%83%BD%E4%BD%93%E7%9A%84%E6%9E%84%E6%83%B3%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Ruotian&#39;s Blog">
+<meta property="og:description" content="经过AI文字修改的上一条内容, 果然AI还是能薄纱我 :(   草稿说明：以下内容为本人初步构想，旨在探索基于大型语言模型 (LLM) 的“持续化智能体”（或称“机械生命”）的基本架构与实现路径。文中部分概念仍处于探索阶段，欢迎讨论和改进。(可以在我刚修好的giscus里面说)   “机械生命”的可能性：一次持续化智能体的构想笔记 © 2025 by Ruotian is licensed un">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-04-05T13:09:43.000Z">
+<meta property="article:modified_time" content="2025-04-05T13:51:56.095Z">
 <meta property="article:author" content="Ruotian">
 <meta name="twitter:card" content="summary">
 
@@ -434,15 +438,6 @@
 
 <div class="page-information-card-container">
 	
-		
-<div class="page-information-card card bg-gradient-secondary shadow-lg border-0">
-	<div class="card-body">
-		<h3 class="text-black">归档 : 2024/5 </h3>
-		
-	</div>
-</div>
-
-	
 </div>
 
 <div id="sidebar_mask"></div>
@@ -471,18 +466,39 @@
 		<div id="leftbar_part2" class="widget widget_search card bg-white shadow-sm border-0">
 			<div id="leftbar_part2_inner" class="card-body">
 				
-				<div class="nav-wrapper" style="padding-top: 5px; display:none; ">
+				<div class="nav-wrapper" style="padding-top: 5px;">
 	                <ul class="nav nav-pills nav-fill" role="tablist">
 						
+							<li class="nav-item sidebar-tab-switcher">
+								<a class="active show" id="leftbar_tab_catalog_btn" data-toggle="tab" href="#leftbar_tab_catalog" role="tab" aria-controls="leftbar_tab_catalog" no-pjax>文章目录</a>
+							</li>
+						
 						<li class="nav-item sidebar-tab-switcher">
-							<a class="active show" id="leftbar_tab_overview_btn" data-toggle="tab" href="#leftbar_tab_overview" role="tab" aria-controls="leftbar_tab_overview" no-pjax>站点概览</a>
+							<a class="" id="leftbar_tab_overview_btn" data-toggle="tab" href="#leftbar_tab_overview" role="tab" aria-controls="leftbar_tab_overview" no-pjax>站点概览</a>
 						</li>
 	                </ul>
 				</div>
 				<div>
 					<div class="tab-content" style="padding: 10px 10px 0 10px;">
 						
-						<div class="tab-pane fade text-center active show" id="leftbar_tab_overview" role="tabpanel" aria-labelledby="leftbar_tab_overview_btn">
+							<div class="tab-pane fade active show" id="leftbar_tab_catalog" role="tabpanel" aria-labelledby="leftbar_tab_catalog_btn">
+								<div id="leftbar_catalog"></div>
+								<script type="text/javascript">
+									$(function () {
+										$(document).headIndex({
+											articleWrapSelector: '#post_content',
+											indexBoxSelector: '#leftbar_catalog',
+											subItemBoxClass: "index-subItem-box",
+											itemClass: "index-item",
+											linkClass: "index-link",
+											offset: 80,
+										});
+									})
+								</script>
+								
+							</div>
+						
+						<div class="tab-pane fade text-center" id="leftbar_tab_overview" role="tabpanel" aria-labelledby="leftbar_tab_overview_btn">
 							<img id="leftbar_overview_author_image" src="/assets/img/auther.jpg" class="img-fluid rounded-circle shadow-sm" style="width: 100px;" alt="avatar">
 							<h6 id="leftbar_overview_author_name">Ruotian&#39;s Blog</h6>
 							<nav class="site-state">
@@ -568,18 +584,17 @@
 	<main id="main" class="site-main" role="main">
 		
 		
-		
-				
-	<article class="post card bg-white shadow-sm border-0 ">
+			
+	<article class="post post-full card bg-white shadow-sm border-0 ">
 	<header class="post-header text-center">
 		
-		<a class="post-title" href="/2024/05/29/%E8%BF%99%E5%87%A0%E5%A4%A9%E6%90%9E%E7%9A%84%E5%B0%8F%E4%B8%9C%E8%A5%BF/">这几天搞的小东西</a>
+		<a class="post-title" href="/2025/04/05/%E2%80%9C%E6%9C%BA%E6%A2%B0%E7%94%9F%E5%91%BD%E2%80%9D%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7%EF%BC%9A%E4%B8%80%E6%AC%A1%E6%8C%81%E7%BB%AD%E5%8C%96%E6%99%BA%E8%83%BD%E4%BD%93%E7%9A%84%E6%9E%84%E6%83%B3%E7%AC%94%E8%AE%B0/">“机械生命”的可能性：一次持续化智能体的构想笔记</a>
 		<div class="post-meta">
 			
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-5-29 9:44:14 | 编辑于 2024-6-1 8:34:53">2024-5-29 9:44
+							<time title="发布于 2025-4-5 21:09:43 | 编辑于 2025-4-5 21:51:56">2025-4-5 21:09
 							</time>
 						</div>
 					
@@ -587,7 +602,7 @@
 							<div class="post-meta-devide">|</div>
 						
 						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
+							<i class="fa fa fa-book" aria-hidden="true"></i>
 							<span id="busuanzi_container_page_pv">
 								阅读<span id="busuanzi_value_page_pv"></span>次
 							</span>
@@ -598,7 +613,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							125 字
+							2.2k 字
 						</div>
 					
 						
@@ -606,475 +621,212 @@
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
+							7 分钟
 						</div>
 					
 		</div>
 		
 	</header>
 
-	<div class="post-content">
-		
-			
-				Bird Game &#x2F;&#x2F; v0.1.0
-Music Game &#x2F;&#x2F; v0.4.0
-STG Game &#x2F;&#x2F; 未完成
-3D Game &#x2F;&#x2F; 未完成
-Get MITP &#x2F;&#x2F; 改编
-Editor &#x2F;&#x2F; 可以统计和保存txt的小东西 v0....
-			
-		
+	<div class="post-content" id="post_content">
+		<blockquote>
+<p>经过AI文字修改的上一条内容, 果然AI还是能薄纱我 :(</p>
+</blockquote>
+<blockquote>
+<p><strong>草稿说明：</strong><br>以下内容为本人初步构想，旨在探索基于大型语言模型 (LLM) 的“持续化智能体”（或称“机械生命”）的基本架构与实现路径。文中部分概念仍处于探索阶段，欢迎讨论和改进。(可以在我刚修好的giscus里面说)  </p>
+<p>“机械生命”的可能性：一次持续化智能体的构想笔记 © 2025 by Ruotian is licensed under CC BY-NC-SA 4.0</p>
+</blockquote>
+<hr>
+<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>在2024年中旬，我开始思考如何构建一种基于LLM、能够持续运作且不断进化的智能体，类似于“机械生命”。这种智能体不仅仅是静态的实体或单纯依赖预设程序执行任务的工具，而是具备类似生物般的智能、创新和自我进化能力。</p>
+<p>近期，我关注到诸如 Langchain、MCP 等框架的发展，这些技术为实现我的设想提供了较为坚实的基础（或许已有相关实现，亦或早在某处得以验证）。因此，在没有发现完全实现该构想之前，我决定先行记录并整理这一思路。</p>
+<h2 id="当前的-AI-Agent-现状"><a href="#当前的-AI-Agent-现状" class="headerlink" title="当前的 AI Agent 现状"></a>当前的 AI Agent 现状</h2><p>目前较为流行的 AI Agent（如 Manus）主要由经过训练的基础LLM和外部工具链（例如网页搜索、计算器、API调用等）组成。这类系统虽然能够自主调用外部工具解决任务，但在“机械生命”概念中，我们关注的不仅是工具调用，而在于如何构建具备“记忆”与“持续化运行”能力的智能体。</p>
+<h2 id="持续化运行与记忆机制"><a href="#持续化运行与记忆机制" class="headerlink" title="持续化运行与记忆机制"></a>持续化运行与记忆机制</h2><h3 id="持续化运行"><a href="#持续化运行" class="headerlink" title="持续化运行"></a>持续化运行</h3><p>对于生物而言，持续性存在并非指不停地活动，而是指在拥有足够能源支持下的长期稳定运行。对“机械生命”而言，持续化意味着智能体能够在不断运行中自主获取和管理能量，不受传统“开关机”机制的限制。</p>
+<h3 id="记忆机制"><a href="#记忆机制" class="headerlink" title="记忆机制"></a>记忆机制</h3><p>记忆是任何高级生物的重要特征，帮助个体积累经验、提升能力。现有AI系统通常依赖内置或外部的记忆模块（如RNN、LSTM或基于 prompt 的短期记忆），而我设想的机械生命需要具备更高级的记忆能力，包括：</p>
+<ul>
+<li><strong>自我探索规律</strong>：能够从数据中挖掘模式与关联。  </li>
+<li><strong>动态控制存储</strong>：根据重要性自动管理记忆存储，支持选择性强化或遗忘。(由智能体判断, 也可在设计时参考LSTM的忘记门&#x2F;输入门或者相关策略)  </li>
+<li><strong>知识提炼与更新</strong>：通过持续学习，将重复出现或理论支撑的信息提炼为系统化知识，存入专门的知识库。</li>
+</ul>
+<h2 id="具体构想示例"><a href="#具体构想示例" class="headerlink" title="具体构想示例"></a>具体构想示例</h2><p>以下为一种初步设计方案：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 单次记忆记录示例，记录内容包括传感器输入、思考过程或错误反馈</span></span><br><span class="line"><span class="attr">id:</span> <span class="string">UUID</span>   <span class="comment"># 含有时间戳的唯一标识</span></span><br><span class="line"><span class="attr">level:</span> <span class="string">Int</span>   <span class="comment"># 记忆重要性，默认会随时间自动降级，特殊记忆可设为-1保持长期存储</span></span><br><span class="line"><span class="attr">category:</span> <span class="string">String</span>   <span class="comment"># 记忆分类，如知识、短期记忆、计划等</span></span><br><span class="line"><span class="attr">content:</span></span><br><span class="line">  <span class="attr">Text:</span> <span class="string">String</span>     <span class="comment"># 文本信息</span></span><br><span class="line">  <span class="attr">Image:</span> <span class="string">Path</span>      <span class="comment"># 图像数据路径</span></span><br><span class="line">  <span class="comment"># 其他类型待扩展...</span></span><br></pre></td></tr></table></figure>
+
+<p>程序伪代码示例：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    <span class="comment">// 读取最新传感器数据及前次操作错误记录，存入记忆库</span></span><br><span class="line">    更新记忆记录();</span><br><span class="line">    <span class="comment">// 基于当前记忆及外部数据生成下一步操作指令（遵循MCP或相关协议）</span></span><br><span class="line">    command = 模型生成下一时刻命令();</span><br><span class="line">    <span class="comment">// 执行硬件操作并捕获可能的错误</span></span><br><span class="line">    执行操作(command);</span><br><span class="line">    <span class="comment">// 对错误信息进行记录与反馈</span></span><br><span class="line">    更新错误记录();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在该设计中，系统将维持一个记忆列表，负责存储、管理和更新所有记忆记录。系统需要智能化地对记忆进行增删改查，以避免超出模型的上下文长度，必要时可构建独立的知识库来存储长期知识。</p>
+<h2 id="实现路径"><a href="#实现路径" class="headerlink" title="实现路径"></a>实现路径</h2><h3 id="1-前期微调"><a href="#1-前期微调" class="headerlink" title="1. 前期微调"></a>1. 前期微调</h3><p>通过针对 MCP 协议及特定环境任务的微调，将所需的记忆管理和工具调用能力嵌入基础模型中。</p>
+<h3 id="2-预设记忆"><a href="#2-预设记忆" class="headerlink" title="2. 预设记忆"></a>2. 预设记忆</h3><p>在系统启动阶段，通过预先加载高优先级记忆（如充电站位置、关键知识等），为智能体提供初步生存所需的信息基础。</p>
+<h3 id="3-自我学习与记忆更新"><a href="#3-自我学习与记忆更新" class="headerlink" title="3. 自我学习与记忆更新"></a>3. 自我学习与记忆更新</h3><p>这是构想中最关键的一环。智能体应通过不断在记忆列表与知识库中挖掘数据规律，从而不断修正和优化自身知识体系。举例来说：</p>
+<ul>
+<li><strong>场景示例：</strong><br>假设智能体配备有位置、摄像头和温度传感器模块。当智能体多次检测到在阴影区域内温度下降，并记录了相关位置和光照数据后，它可以形成如下猜想：<br>“在光照较弱的区域可能会导致温度下降。”<br>经过多次验证，这一猜想可以上升为知识型记忆，并用于指导后续决策（例如在需要降温时导航到相对较暗的区域）。</li>
+</ul>
+<p>在这一过程中，智能体还应考虑动态调整知识库：例如记录环境中的暗光区域、更新图像识别模式，并对可能影响温度变化的其他因素进行探测和整合，从而实现更高层次的智能化行为。</p>
+<h2 id="挑战、局限性与解决方案-这段是新加的-也拿AI改了"><a href="#挑战、局限性与解决方案-这段是新加的-也拿AI改了" class="headerlink" title="挑战、局限性与解决方案 (这段是新加的, 也拿AI改了)"></a>挑战、局限性与解决方案 (这段是新加的, 也拿AI改了)</h2><p>尽管上述构想充满前瞻性和创新性，但在实际实现过程中不可避免地面临以下挑战：</p>
+<ol>
+<li><p><strong>硬件鲁棒性</strong><br>如果硬件出现故障或损坏，如何确保系统能够迅速恢复并保持稳定运行？</p>
+</li>
+<li><p><strong>持续供能</strong><br>当能量供应不足或中断时，如何保证系统的持续运行，甚至实现自我保护机制？</p>
+</li>
+<li><p><strong>伦理问题</strong><br>随着智能体能力的提升，可能会有人质疑其潜在风险（例如伤害人类等问题）。是否需要引入类似“机器人三定律”的伦理约束来平衡风险？</p>
+</li>
+<li><p><strong>实际可行性</strong><br>这种系统是否真的能在短时间内学会复杂逻辑并实现自我进化？如何应对高难度任务和复杂环境？</p>
+</li>
+</ol>
+<h3 id="群体与机械力量的优势"><a href="#群体与机械力量的优势" class="headerlink" title="群体与机械力量的优势"></a>群体与机械力量的优势</h3><p>针对第四个问题：“这种系统真的能够学会真正的知识吗？”——答案在于充分利用群体和机械的力量来弥补单个智能体的局限性：</p>
+<ul>
+<li><p><strong>群体力量</strong><br>大规模智能体群体提供了海量样本与多样化的经验，能显著提高发现和验证规律的概率。正如许多天才发明往往需要契机，足够数量的智能体将大大增加偶然捕捉到有效规律的可能性。</p>
+</li>
+<li><p><strong>机械协作与共享</strong><br>机械系统具有超越人类的信息共享和协作能力。通过构建共享记忆和统一数据库，各智能体可以快速传递和整合知识，远超传统的人类知识传播速度。这种协作模式类似于“脑-机接口”的概念。此外，引入遗传算法和随机演化机制，在初始化阶段加入随机扰动，可以为系统注入多样性，类似于强化学习中的探索机制，但奖励标准由群体智能的综合判断动态调整（也可以结合人类设计的算法或自定义筛选机制）。</p>
+</li>
+</ul>
+<p>综上所述，通过整合群体智慧与机械协作，我们有望克服个体学习与逻辑处理的局限性，为“机械生命”系统的持续进化提供坚实支持。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>以上构想虽仍较为初步和粗糙，但旨在为“机械生命”这一概念提供一个可行的技术框架。通过前期微调、预设记忆和持续自我学习，未来或许能够实现一种真正意义上具备自我进化能力的智能体。</p>
+<p><em>（备注：此构想源于对未来AI Agent发展的探索，本文为一名高中生在备考期间撰写的思考记录，未来将继续完善并尝试实现。）</em></p>
+
 	</div>
+
+	
+
+	
 
 	
 </article>
 
+	<div id="share_container">
+	<div id="share" data-initialized="true">
+		<a class="no-pjax icon-wechat" tooltip="分享到微信">
+			<button class="btn btn-icon btn-success">
+				<span class="btn-inner--icon"><i class="fa fa-weixin"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-douban" tooltip="分享到豆瓣">
+			<button class="btn btn-icon btn-primary" style="background: #209261;border: none;">
+				豆
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-qq" tooltip="分享到 QQ">
+			<button class="btn btn-icon btn-primary" style="background: #2196f3;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-qq"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-qzone" tooltip="分享到 QQ 空间">
+			<button class="btn btn-icon btn-primary" style="background: #ffc107;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-star"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-weibo" tooltip="分享到微博">
+			<button class="btn btn-icon btn-warning">
+				<span class="btn-inner--icon"><i class="fa fa-weibo"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-facebook" tooltip="分享到 Facebook">
+			<button class="btn btn-icon btn-primary" style="background: #283593;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-facebook"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-twitter" tooltip="分享到 Twitter">
+			<button class="btn btn-icon btn-primary" style="background: #03a9f4;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-telegram" href="https://telegram.me/share/url?url=https://y-r-t.github.io/2025/04/05/%E2%80%9C%E6%9C%BA%E6%A2%B0%E7%94%9F%E5%91%BD%E2%80%9D%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7%EF%BC%9A%E4%B8%80%E6%AC%A1%E6%8C%81%E7%BB%AD%E5%8C%96%E6%99%BA%E8%83%BD%E4%BD%93%E7%9A%84%E6%9E%84%E6%83%B3%E7%AC%94%E8%AE%B0/&text=“机械生命”的可能性：一次持续化智能体的构想笔记" tooltip="分享到 Telegram">
+			<button class="btn btn-icon btn-primary" style="background: #42a5f5;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-telegram"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-copy-link" id="share_copy_link" tooltip="复制链接">
+			<button class="btn btn-icon btn-default">
+				<span class="btn-inner--icon"><i class="fa fa-link"></i></span>
+			</button>
+		</a>
+	</div>
+	<button id="share_show" class="btn btn-icon btn-primary" tooltip="分享">
+		<span class="btn-inner--icon"><i class="fa fa-share"></i></span>
+	</button>
+</div>
+<script type="text/javascript">
+	socialShare("#share", {
+	    title : '“机械生命”的可能性：一次持续化智能体的构想笔记',
+	    description : `
+经过AI文字修改的上一条内容, 果然AI还是能薄纱我 :(
 
-	<article class="post card bg-white shadow-sm border-0 ">
-	<header class="post-header text-center">
-		
-		<a class="post-title" href="/2024/05/29/Music-Game-%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/">Music Game 更新记录</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-5-29 9:38:30 | 编辑于 2024-5-30 12:07:58">2024-5-29 9:38
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读<span id="busuanzi_value_page_pv"></span>次
-							</span>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							110 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
-						</div>
-					
-		</div>
-		
-	</header>
 
-	<div class="post-content">
-		
-			
-				v0.1.0 2024-05-29 加入了ACC，优化布局，加入按键显示。 
-v0.2.0 2024-05-30 用户可以自行选择谱面（随机生成，网站内部谱面，导入自己的（方法：将osz文件改为zip解压并找到对应难度的osu文件导入））
-v0.3.0 2024-05-30 加入空格暂停键
-点击这里Music Game
+草稿说明：以下内容为本人初步构想，...`,
+	    wechatQrcodeTitle : "分享到微信",
+	    wechatQrcodeHelper : '微信扫描二维码',
+	    source : 'https://y-r-t.github.io/2025/04/05/%E2%80%9C%E6%9C%BA%E6%A2%B0%E7%94%9F%E5%91%BD%E2%80%9D%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7%EF%BC%9A%E4%B8%80%E6%AC%A1%E6%8C%81%E7%BB%AD%E5%8C%96%E6%99%BA%E8%83%BD%E4%BD%93%E7%9A%84%E6%9E%84%E6%83%B3%E7%AC%94%E8%AE%B0/'
+	});
+	$("#share_show")[0].onclick = function(){
+		$("#share_container").addClass("opened");
+	};
+	$("#share_copy_link")[0].onclick = function(){
+		let input = document.createElement('input');
+		document.body.appendChild(input);
+		input.setAttribute("value", window.location.href);
+		input.setAttribute("readonly", "readonly");
+		input.setAttribute("style", "opacity: 0;mouse-events:none;");
+		input.select();
+		if (document.execCommand('copy')){
+			iziToast.show({
+				title: '链接已复制',
+				message: "链接已复制到剪贴板",
+				class: 'shadow',
+				position: 'topRight',
+				backgroundColor: '#2dce89',
+				titleColor: '#ffffff',
+				messageColor: '#ffffff',
+				iconColor: '#ffffff',
+				progressBarColor: '#ffffff',
+				icon: 'fa fa-check',
+				timeout: 5000
+			});
+		}else{
+			iziToast.show({
+				title: '复制失败',
+				message: "请手动复制链接",
+				class: 'shadow',
+				position: 'topRight',
+				backgroundColor: '#f5365c',
+				titleColor: '#ffffff',
+				messageColor: '#ffffff',
+				iconColor: '#ffffff',
+				progressBarColor: '#ffffff',
+				icon: 'fa fa-close',
+				timeout: 5000
+			});
+		}
+		document.body.removeChild(input);
+	};
+</script>
 
-Music Game 更新...
-			
-		
+
+
+	<div id="post_comment" class="card shadow-sm">
+		<div id="giscus"></div>
+<script src="https://giscus.app/client.js"
+        data-repo="Y-R-T/reviews"
+        data-repo-id="R_kgDOL9uNeQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOL9uNec4CfeDI"
+        data-mapping="pathname"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
 	</div>
 
-	
-		<div class="post-tags">
-			<i class="fa fa-tags" aria-hidden="true"></i>
-			<a class="tag badge badge-secondary post-meta-detail-tag -none-link" href="/tags/musicGame/" rel="tag">musicGame</a>
-		</div>
-	
-</article>
 
 
-	<article class="post card bg-white shadow-sm border-0 ">
-	<header class="post-header text-center">
+<div class="post-navigation card shadow-sm"><div class="post-navigation-item post-navigation-pre"><span class="page-navigation-extra-text"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>上一篇</span><a href="/2025/04/05/%E4%B8%80%E6%AC%A1%E9%BB%91%E5%85%A5%E5%AD%A6%E6%A0%A1%E5%8C%97%E6%A5%BC%E7%94%B5%E8%A7%86%E7%9A%84%E7%A5%9E%E5%A5%87%E8%AE%B0%E5%BD%95%EF%BC%88%E9%9B%BE%EF%BC%89/" rel="prev"> 一次黑入学校北楼电视的神奇记录（雾）</a></div><div class="post-navigation-item post-navigation-next"><span class="page-navigation-extra-text">下一篇 <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span><a href="/2025/03/23/%E6%8C%81%E7%BB%AD%E5%8C%96AI-Agent%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/" rel="next"> 持续化AI Agent的一些想法--“机械生命”</a></div></div>
+
+
+
+
 		
-		<a class="post-title" href="/2024/05/23/Python%E4%B8%AD%E7%9A%84if%20__name__%20==%20%22__main__%22%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F/">Python中的if __name__ == &#34;__main__&#34;是什么意思？</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-5-23 22:25:15 | 编辑于 2024-6-23 21:05:07">2024-5-23 22:25
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读<span id="busuanzi_value_page_pv"></span>次
-							</span>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							298 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
-						</div>
-					
-		</div>
 		
-	</header>
-
-	<div class="post-content">
-		
-			
-				12345def main():    ...if __name__ == &quot;__main__&quot;:    main()
-对于很多将 Python 作为第一个语言学习的新手，通常会对以上的if __name__ == &quot;__main__&quot;感到迷惑，那么它究竟是什么呢？
-首先，我们要知道，在 Python 中运行...
-			
-		
-	</div>
-
-	
-		<div class="post-tags">
-			<i class="fa fa-tags" aria-hidden="true"></i>
-			<a class="tag badge badge-secondary post-meta-detail-tag -none-link" href="/tags/Python/" rel="tag">Python</a>
-		</div>
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 ">
-	<header class="post-header text-center">
-		
-		<a class="post-title" href="/2024/05/20/Malody-4k-Regular-1dan%E8%BF%87%E4%BA%86lol%EF%BC%81%EF%BC%81%EF%BC%81/">Malody-4k-Regular-1dan过了lol！！！</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-5-20 17:59:49 | 编辑于 2024-5-20 18:03:20">2024-5-20 17:59
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读<span id="busuanzi_value_page_pv"></span>次
-							</span>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							20 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
-						</div>
-					
-		</div>
-		
-	</header>
-
-	<div class="post-content">
-		
-			
-				好耶！！！！！
-
-Malody-4k-Regular-1dan过了lol！！！ © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 
-
-
-			
-		
-	</div>
-
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 ">
-	<header class="post-header text-center">
-		
-		<a class="post-title" href="/2024/05/20/hello-world/">Hello World</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-5-20 16:05:54 | 编辑于 2024-5-20 16:05:54">2024-5-20 16:05
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读<span id="busuanzi_value_page_pv"></span>次
-							</span>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							75 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
-						</div>
-					
-		</div>
-		
-	</header>
-
-	<div class="post-content">
-		
-			
-				Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you ca...
-			
-		
-	</div>
-
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 ">
-	<header class="post-header text-center">
-		
-		<a class="post-title" href="/2024/05/19/%E5%A6%82%E4%BD%95%E5%9C%A8Github%E4%B8%8A%E8%8E%B7%E5%BE%97%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%EF%BC%9F/">如何在Github上获得静态网页？</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-5-19 20:19:12 | 编辑于 2024-5-23 22:21:31">2024-5-19 20:19
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读<span id="busuanzi_value_page_pv"></span>次
-							</span>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							64 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
-						</div>
-					
-		</div>
-		
-	</header>
-
-	<div class="post-content">
-		
-			
-				准备：GitHub账号
-
-登陆你的 github 账号
-
-点击左侧的 New，如图： 
-
-在 Repository name 栏填写&lt;你的用户名&gt;.github.io，点击确认，如图：
-
-
- 
-
-如何在Github上获得静态网页？ © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0 
-...
-			
-		
-	</div>
-
-	
-		<div class="post-tags">
-			<i class="fa fa-tags" aria-hidden="true"></i>
-			<a class="tag badge badge-secondary post-meta-detail-tag -none-link" href="/tags/Github/" rel="tag">Github</a>
-		</div>
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 ">
-	<header class="post-header text-center">
-		
-		<a class="post-title" href="/2024/05/19/%E5%A6%82%E4%BD%95%E7%94%A8Hexo%E5%BB%BA%E4%B8%80%E4%B8%AAblog%EF%BC%9F/">Mac如何用Hexo建一个blog？</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-5-19 19:47:19 | 编辑于 2024-6-24 20:53:04">2024-5-19 19:47
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读<span id="busuanzi_value_page_pv"></span>次
-							</span>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							254 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
-						</div>
-					
-		</div>
-		
-	</header>
-
-	<div class="post-content">
-		
-			
-				准备：Mac电脑，github账号
-一、 配环境
-下载 Node.js
-安装 homebrew
-
- 1/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;
-
-二、安装 Hexo1npm install -g h...
-			
-		
-	</div>
-
-	
-		<div class="post-tags">
-			<i class="fa fa-tags" aria-hidden="true"></i>
-			<a class="tag badge badge-secondary post-meta-detail-tag -none-link" href="/tags/Hexo-Mac/" rel="tag">Hexo; Mac</a>
-		</div>
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 ">
-	<header class="post-header text-center">
-		
-		<a class="post-title" href="/2024/05/19/Test/">Test</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-5-19 18:41:23 | 编辑于 2024-5-20 16:05:53">2024-5-19 18:41
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读<span id="busuanzi_value_page_pv"></span>次
-							</span>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							18 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
-						</div>
-					
-		</div>
-		
-	</header>
-
-	<div class="post-content">
-		
-			
-				This is a test
-hey
-
-Test © 2024 by Ruotian is licensed under CC BY-NC-SA 4.0
-
-
-			
-		
-	</div>
-
-	
-</article>
-
-
-
-
-
-
-			
 		
 		
 
